@@ -1,6 +1,6 @@
 module github.com/spectralops/teller
 
-go 1.18
+go 1.22.6
 
 require (
 	cloud.google.com/go v0.78.0
@@ -34,13 +34,13 @@ require (
 	github.com/samber/lo v1.11.0
 	github.com/sirupsen/logrus v1.7.0
 	github.com/sosedoff/ansible-vault-go v0.2.0
-	github.com/stretchr/testify v1.8.1
+	github.com/stretchr/testify v1.9.0
 	github.com/testcontainers/testcontainers-go v0.10.1-0.20210331130832-54854fb15ccb
-	github.com/tobischo/gokeepasslib/v3 v3.2.5
+	github.com/tobischo/gokeepasslib/v3 v3.6.0
 	go.etcd.io/etcd/api/v3 v3.5.0-alpha.0
 	go.etcd.io/etcd/client/v3 v3.5.0-alpha.0
 	go.etcd.io/etcd/pkg/v3 v3.5.0-alpha.0
-	golang.org/x/crypto v0.8.0
+	golang.org/x/crypto v0.22.0
 	golang.org/x/oauth2 v0.5.0
 	google.golang.org/api v0.40.0
 	google.golang.org/genproto v0.0.0-20210222152913-aa3ee6e6a81c
@@ -48,7 +48,10 @@ require (
 	gopkg.in/yaml.v3 v3.0.1
 )
 
-require github.com/aws/aws-sdk-go-v2/service/internal/accept-encoding v1.10.4 // indirect
+require (
+	github.com/aws/aws-sdk-go-v2/service/internal/accept-encoding v1.10.4 // indirect
+	github.com/tobischo/argon2 v0.1.0 // indirect
+)
 
 require (
 	filippo.io/age v1.1.1 // indirect
@@ -65,8 +68,6 @@ require (
 	github.com/Microsoft/go-winio v0.4.17-0.20210211115548-6eac466e5fa3 // indirect
 	github.com/Microsoft/hcsshim v0.8.15 // indirect
 	github.com/ProtonMail/go-crypto v0.0.0-20230201104953-d1d05f4e2bfb // indirect
-	github.com/aead/argon2 v0.0.0-20180111183520-a87724528b07 // indirect
-	github.com/aead/chacha20 v0.0.0-20180709150244-8b13a72661da // indirect
 	github.com/alecthomas/colour v0.1.0 // indirect
 	github.com/alecthomas/repr v0.0.0-20201120212035-bb82daffcca2 // indirect
 	github.com/alessio/shellescape v1.4.1 // indirect
@@ -107,7 +108,7 @@ require (
 	github.com/golang/groupcache v0.0.0-20200121045136-8c9f03a8e57e // indirect
 	github.com/golang/protobuf v1.5.2 // indirect
 	github.com/golang/snappy v0.0.1 // indirect
-	github.com/google/go-cmp v0.5.9 // indirect
+	github.com/google/go-cmp v0.6.0 // indirect
 	github.com/google/go-github v17.0.0+incompatible // indirect
 	github.com/google/go-querystring v1.1.0 // indirect
 	github.com/google/uuid v1.2.0 // indirect
@@ -161,11 +162,11 @@ require (
 	go.uber.org/multierr v1.9.0 // indirect
 	go.uber.org/zap v1.16.0 // indirect
 	golang.org/x/exp v0.0.0-20230212135524-a684f29349b6 // indirect
-	golang.org/x/net v0.9.0 // indirect
+	golang.org/x/net v0.21.0 // indirect
 	golang.org/x/sync v0.1.0 // indirect
-	golang.org/x/sys v0.7.0 // indirect
-	golang.org/x/term v0.7.0 // indirect
-	golang.org/x/text v0.9.0 // indirect
+	golang.org/x/sys v0.19.0 // indirect
+	golang.org/x/term v0.19.0 // indirect
+	golang.org/x/text v0.14.0 // indirect
 	golang.org/x/time v0.0.0-20201208040808-7e3f01d25324 // indirect
 	google.golang.org/appengine v1.6.7 // indirect
 	google.golang.org/grpc v1.35.0 // indirect

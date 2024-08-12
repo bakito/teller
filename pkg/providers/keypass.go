@@ -24,7 +24,7 @@ type KeyPass struct {
 
 const KeyPassName = "KeyPass"
 
-//nolint
+// nolint
 func init() {
 	metaInfo := core.MetaInfo{
 		Description:    "Keypass",
@@ -187,7 +187,7 @@ func (k *KeyPass) prepareGroups(path string, groups []gokeepasslib.Group, mapDat
 		}
 		if len(group.Groups) > 0 {
 			// call recursively prepareGroups function get collect entries
-			return k.prepareGroups(strings.TrimPrefix(fmt.Sprintf("%s/%s", path, group.Name), "/"), group.Groups, mapData)
+			mapData = k.prepareGroups(strings.TrimPrefix(fmt.Sprintf("%s/%s", path, group.Name), "/"), group.Groups, mapData)
 		}
 	}
 	return mapData
