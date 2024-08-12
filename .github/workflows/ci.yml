@@ -13,7 +13,6 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest, macos-latest]
-        go: ['1.22']
     env:
       VERBOSE: 1
       GOFLAGS: -mod=readonly
@@ -21,17 +20,17 @@ jobs:
 
     steps:
       - name: Set up Go
-        uses: actions/setup-go@v3
+        uses: actions/setup-go@v5
         with:
-          go-version: ${{ matrix.go }}
+          go-version-file: "go.mod"
 
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: golangci-lint
-        uses: golangci/golangci-lint-action@v3
+        uses: golangci/golangci-lint-action@v6
         with:
-          version: v1.45.0
+          skip-cache: true
           args: --timeout 5m0s
 
       - name: Test
