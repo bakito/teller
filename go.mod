@@ -20,6 +20,7 @@ require (
 	github.com/dghubble/sling v1.3.0
 	github.com/fatih/color v1.17.0
 	github.com/google/go-github/v43 v43.0.0
+	github.com/google/go-github/v63 v63.0.0
 	github.com/googleapis/gax-go/v2 v2.13.0
 	github.com/gopasspw/gopass v1.15.14
 	github.com/hashicorp/consul/api v1.8.1
