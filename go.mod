@@ -3,7 +3,6 @@ module github.com/spectralops/teller
 go 1.22.6
 
 require (
-	cloud.google.com/go v0.115.0
 	cloud.google.com/go/secretmanager v1.13.6
 	github.com/1Password/connect-sdk-go v1.2.0
 	github.com/AlecAivazis/survey/v2 v2.2.8
@@ -41,6 +40,7 @@ require (
 	go.etcd.io/etcd/api/v3 v3.5.0-alpha.0
 	go.etcd.io/etcd/client/v3 v3.5.0-alpha.0
 	go.etcd.io/etcd/pkg/v3 v3.5.0-alpha.0
+	go.uber.org/mock v0.4.0
 	golang.org/x/crypto v0.25.0
 	golang.org/x/oauth2 v0.22.0
 	google.golang.org/api v0.191.0
@@ -120,7 +120,6 @@ require (
 	github.com/docker/go-connections v0.4.0 // indirect
 	github.com/docker/go-units v0.4.0 // indirect
 	github.com/dustin/go-humanize v1.0.1 // indirect
-	github.com/form3tech-oss/jwt-go v3.2.2+incompatible // indirect
 	github.com/godbus/dbus/v5 v5.1.0 // indirect
 	github.com/gogo/protobuf v1.3.2 // indirect
 	github.com/golang/groupcache v0.0.0-20210331224755-41bb18bfe9da // indirect
@@ -186,7 +185,6 @@ require (
 	golang.org/x/term v0.22.0 // indirect
 	golang.org/x/text v0.16.0 // indirect
 	golang.org/x/time v0.6.0 // indirect
-	google.golang.org/appengine v1.6.8 // indirect
 	google.golang.org/grpc v1.64.1 // indirect
 	google.golang.org/protobuf v1.34.2 // indirect
 	gopkg.in/gookit/color.v1 v1.1.6 // indirect

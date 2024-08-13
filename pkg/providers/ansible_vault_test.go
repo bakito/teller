@@ -3,8 +3,8 @@ package providers
 import (
 	"testing"
 
-	"github.com/golang/mock/gomock"
 	"github.com/spectralops/teller/pkg/providers/mock_providers"
+	"go.uber.org/mock/gomock"
 )
 
 func TestAnsibleVault(t *testing.T) {

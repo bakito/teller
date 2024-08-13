@@ -7,7 +7,7 @@ package mock_providers
 import (
 	reflect "reflect"
 
-	gomock "github.com/golang/mock/gomock"
+	gomock "go.uber.org/mock/gomock"
 )
 
 // MockAnsibleVaultClient is a mock of AnsibleVaultClient interface.

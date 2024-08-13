@@ -6,7 +6,7 @@ import (
 
 	secretmanager "cloud.google.com/go/secretmanager/apiv1"
 	"github.com/alecthomas/assert"
-	"github.com/golang/mock/gomock"
+	"go.uber.org/mock/gomock"
 	secretmanagerpb "google.golang.org/genproto/googleapis/cloud/secretmanager/v1"
 
 	"github.com/spectralops/teller/pkg/core"

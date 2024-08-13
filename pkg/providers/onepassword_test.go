@@ -5,7 +5,7 @@ import (
 	"testing"
 
 	"github.com/alecthomas/assert"
-	"github.com/golang/mock/gomock"
+	"go.uber.org/mock/gomock"
 
 	"github.com/1Password/connect-sdk-go/onepassword"
 	"github.com/spectralops/teller/pkg/core"

@@ -6,8 +6,8 @@ import (
 	"testing"
 
 	"github.com/alecthomas/assert"
-	"github.com/golang/mock/gomock"
 	"github.com/gopasspw/gopass/pkg/gopass/secrets/secparse"
+	"go.uber.org/mock/gomock"
 
 	// "github.com/gopasspw/gopass/pkg/gopass/secrets/secparse"
 	"github.com/spectralops/teller/pkg/core"

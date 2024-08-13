@@ -9,7 +9,7 @@ import (
 	"github.com/alecthomas/assert"
 	"github.com/aws/aws-sdk-go-v2/service/ssm"
 	"github.com/aws/aws-sdk-go-v2/service/ssm/types"
-	"github.com/golang/mock/gomock"
+	"go.uber.org/mock/gomock"
 
 	"github.com/spectralops/teller/pkg/core"
 	"github.com/spectralops/teller/pkg/providers/mock_providers"

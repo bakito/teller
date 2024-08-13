@@ -5,8 +5,8 @@ import (
 
 	"github.com/DopplerHQ/cli/pkg/http"
 	"github.com/DopplerHQ/cli/pkg/models"
-	"github.com/golang/mock/gomock"
 	"github.com/spectralops/teller/pkg/providers/mock_providers"
+	"go.uber.org/mock/gomock"
 )
 
 func TestDoppler(t *testing.T) {
