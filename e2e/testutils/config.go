@@ -7,7 +7,7 @@ import (
 	"text/template"
 
 	"github.com/karrick/godirwalk"
-	"gopkg.in/yaml.v2"
+	"gopkg.in/yaml.v3"
 )
 
 type SnapshotSuite struct {

@@ -14,9 +14,9 @@ import (
 	reflect "reflect"
 
 	apiv1 "cloud.google.com/go/secretmanager/apiv1"
+	v1 "cloud.google.com/go/secretmanager/apiv1/secretmanagerpb"
 	v2 "github.com/googleapis/gax-go/v2"
 	gomock "go.uber.org/mock/gomock"
-	v1 "cloud.google.com/go/secretmanager/apiv1/secretmanagerpb"
 )
 
 // MockGoogleSMClient is a mock of GoogleSMClient interface.

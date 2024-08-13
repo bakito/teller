@@ -5,7 +5,7 @@ import (
 	"testing"
 
 	"github.com/alecthomas/assert"
-	"github.com/google/go-github/v43/github"
+	"github.com/google/go-github/v63/github"
 	"github.com/spectralops/teller/pkg/core"
 	"github.com/spectralops/teller/pkg/providers/mock_providers"
 	"go.uber.org/mock/gomock"
