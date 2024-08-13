@@ -5,7 +5,7 @@ go 1.22.6
 require (
 	cloud.google.com/go/secretmanager v1.13.6
 	github.com/1Password/connect-sdk-go v1.2.0
-	github.com/AlecAivazis/survey/v2 v2.2.8
+	github.com/AlecAivazis/survey/v2 v2.3.7
 	github.com/Azure/azure-sdk-for-go v52.5.0+incompatible
 	github.com/Azure/go-autorest/autorest v0.11.29
 	github.com/DopplerHQ/cli v0.0.0-20210309042056-414bede8a50e
