@@ -6,11 +6,10 @@ import (
 
 	secretmanager "cloud.google.com/go/secretmanager/apiv1"
 	"github.com/alecthomas/assert"
-	"go.uber.org/mock/gomock"
-	secretmanagerpb "google.golang.org/genproto/googleapis/cloud/secretmanager/v1"
-
 	"github.com/spectralops/teller/pkg/core"
 	"github.com/spectralops/teller/pkg/providers/mock_providers"
+	"go.uber.org/mock/gomock"
+	secretmanagerpb "google.golang.org/genproto/googleapis/cloud/secretmanager/v1"
 )
 
 func TestGoogleSM(t *testing.T) {

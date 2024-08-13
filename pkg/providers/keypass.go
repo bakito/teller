@@ -7,7 +7,6 @@ import (
 	"strings"
 
 	"github.com/spectralops/teller/pkg/core"
-
 	"github.com/spectralops/teller/pkg/logging"
 	"github.com/tobischo/gokeepasslib/v3"
 )

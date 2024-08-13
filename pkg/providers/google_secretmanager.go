@@ -9,12 +9,11 @@ import (
 	"strings"
 
 	secretmanager "cloud.google.com/go/secretmanager/apiv1"
-	secretmanagerpb "google.golang.org/genproto/googleapis/cloud/secretmanager/v1"
-
 	"github.com/googleapis/gax-go/v2"
 	"github.com/spectralops/teller/pkg/core"
 	"github.com/spectralops/teller/pkg/logging"
 	"google.golang.org/api/iterator"
+	secretmanagerpb "google.golang.org/genproto/googleapis/cloud/secretmanager/v1"
 )
 
 type GoogleSMClient interface {

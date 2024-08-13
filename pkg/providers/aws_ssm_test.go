@@ -4,15 +4,13 @@ import (
 	"errors"
 	"testing"
 
-	"github.com/aws/aws-sdk-go-v2/aws"
-
 	"github.com/alecthomas/assert"
+	"github.com/aws/aws-sdk-go-v2/aws"
 	"github.com/aws/aws-sdk-go-v2/service/ssm"
 	"github.com/aws/aws-sdk-go-v2/service/ssm/types"
-	"go.uber.org/mock/gomock"
-
 	"github.com/spectralops/teller/pkg/core"
 	"github.com/spectralops/teller/pkg/providers/mock_providers"
+	"go.uber.org/mock/gomock"
 )
 
 func TestAWSSSM(t *testing.T) {

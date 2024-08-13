@@ -6,10 +6,9 @@ import (
 
 	"github.com/alecthomas/assert"
 	"github.com/aws/aws-sdk-go-v2/service/secretsmanager"
-	"go.uber.org/mock/gomock"
-
 	"github.com/spectralops/teller/pkg/core"
 	"github.com/spectralops/teller/pkg/providers/mock_providers"
+	"go.uber.org/mock/gomock"
 )
 
 func TestAWSSecretsManager(t *testing.T) {

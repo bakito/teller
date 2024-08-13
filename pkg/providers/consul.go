@@ -5,7 +5,6 @@ import (
 	"sort"
 
 	"github.com/hashicorp/consul/api"
-
 	"github.com/spectralops/teller/pkg/core"
 	"github.com/spectralops/teller/pkg/logging"
 	"github.com/spectralops/teller/pkg/utils"

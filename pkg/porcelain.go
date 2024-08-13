@@ -10,11 +10,10 @@ import (
 	"strings"
 	"time"
 
-	survey "github.com/AlecAivazis/survey/v2"
-	"github.com/samber/lo"
-
+	"github.com/AlecAivazis/survey/v2"
 	"github.com/fatih/color"
 	"github.com/jftuga/ellipsis"
+	"github.com/samber/lo"
 	"github.com/spectralops/teller/pkg/core"
 	"github.com/spectralops/teller/pkg/utils"
 )
@@ -45,7 +44,7 @@ func (p *Porcelain) StartWizard() (*core.WizardAnswers, error) {
 			Name: "providers",
 			Prompt: &survey.MultiSelect{
 				Message:  "Select your secret providers",
-				PageSize: 10,
+				PageSize: 10, //nolint: mnd
 				Options:  displayProviders,
 			},
 		},
@@ -110,7 +109,7 @@ func (p *Porcelain) PrintEntries(entries []core.EnvEntry) {
 
 	for i := range entries {
 		v := entries[i]
-		ep := ellipsis.Shorten(v.ResolvedPath, 30) //nolint: gomnd
+		ep := ellipsis.Shorten(v.ResolvedPath, 30) //nolint: mnd
 		if !v.IsFound {
 			fmt.Fprintf(&buf, "[%s %s %s] %s\n", yellow(v.ProviderName), gray(ep), red("missing"), green(v.Key))
 		} else {
@@ -123,7 +122,7 @@ func (p *Porcelain) PrintEntries(entries []core.EnvEntry) {
 	fmt.Fprint(p.Out, out)
 }
 func maskedValue(v string) string {
-	return fmt.Sprintf("%s*****", v[:int(math.Min(float64(len(v)), 2))]) //nolint: gomnd
+	return fmt.Sprintf("%s*****", v[:int(math.Min(float64(len(v)), 2))]) //nolint: mnd
 }
 
 func (p *Porcelain) PrintMatches(matches []core.Match) {

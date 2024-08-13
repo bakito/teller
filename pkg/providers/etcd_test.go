@@ -5,12 +5,11 @@ import (
 	"testing"
 
 	"github.com/alecthomas/assert"
-	"go.uber.org/mock/gomock"
-
 	"github.com/spectralops/teller/pkg/core"
 	"github.com/spectralops/teller/pkg/providers/mock_providers"
 	spb "go.etcd.io/etcd/api/v3/mvccpb"
 	clientv3 "go.etcd.io/etcd/client/v3"
+	"go.uber.org/mock/gomock"
 )
 
 func TestEtcd(t *testing.T) {

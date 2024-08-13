@@ -7,7 +7,6 @@ import (
 	"path/filepath"
 	"regexp"
 	"strings"
-
 	"testing"
 
 	"github.com/spectralops/teller/e2e/register"

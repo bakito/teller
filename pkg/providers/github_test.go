@@ -6,10 +6,9 @@ import (
 
 	"github.com/alecthomas/assert"
 	"github.com/google/go-github/v43/github"
-	"go.uber.org/mock/gomock"
-
 	"github.com/spectralops/teller/pkg/core"
 	"github.com/spectralops/teller/pkg/providers/mock_providers"
+	"go.uber.org/mock/gomock"
 )
 
 func TestGitHubPut(t *testing.T) {

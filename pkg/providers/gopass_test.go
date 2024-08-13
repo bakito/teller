@@ -7,11 +7,11 @@ import (
 
 	"github.com/alecthomas/assert"
 	"github.com/gopasspw/gopass/pkg/gopass/secrets/secparse"
-	"go.uber.org/mock/gomock"
 
 	// "github.com/gopasspw/gopass/pkg/gopass/secrets/secparse"
 	"github.com/spectralops/teller/pkg/core"
 	"github.com/spectralops/teller/pkg/providers/mock_providers"
+	"go.uber.org/mock/gomock"
 )
 
 func TestGopass(t *testing.T) {

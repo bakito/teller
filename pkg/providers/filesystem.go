@@ -114,7 +114,7 @@ func (f *FileSystem) Delete(kp core.KeyPath) error {
 	if err != nil {
 		return err
 	}
-	// to make the delete safely, we allow deleting a single file only
+	// to make the deletion safely, we allow deleting a single file only
 	if fileInfo.IsDir() {
 		return errors.New("delete folder is not supported")
 	}
@@ -159,9 +159,9 @@ func (f *FileSystem) readFile(filePath string) ([]byte, error) {
 }
 
 func (f *FileSystem) IsText(s []byte) bool {
-	const max = 1024
-	if len(s) > max {
-		s = s[0:max]
+	const maxLen = 1024
+	if len(s) > maxLen {
+		s = s[0:maxLen]
 	}
 	for i, c := range string(s) {
 		if i+utf8.UTFMax > len(s) {

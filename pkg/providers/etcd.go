@@ -4,20 +4,17 @@ import (
 	"context"
 	"crypto/tls"
 	"fmt"
-	"sort"
-
 	"os"
+	"sort"
 	"strings"
-
-	spb "go.etcd.io/etcd/api/v3/mvccpb"
-	clientv3 "go.etcd.io/etcd/client/v3"
-
-	"go.etcd.io/etcd/pkg/v3/transport"
 
 	"github.com/samber/lo"
 	"github.com/spectralops/teller/pkg/core"
 	"github.com/spectralops/teller/pkg/logging"
 	"github.com/spectralops/teller/pkg/utils"
+	spb "go.etcd.io/etcd/api/v3/mvccpb"
+	clientv3 "go.etcd.io/etcd/client/v3"
+	"go.etcd.io/etcd/pkg/v3/transport"
 )
 
 type EtcdClient interface {

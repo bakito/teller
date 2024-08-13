@@ -213,7 +213,7 @@ func (a *AWSSecretsManager) getSecret(kp core.KeyPath) (map[string]string, error
 	valueInput := secretsmanager.GetSecretValueInput{SecretId: &kp.Path}
 
 	splitVersion := strings.Split(kp.Path, versionSplit)
-	//nolint:gomnd
+	//nolint:mnd
 	if len(splitVersion) == 2 {
 		a.logger.WithFields(map[string]interface{}{
 			"path":    splitVersion[0],

@@ -132,7 +132,7 @@ func (g *GitHub) DeleteMapping(p core.KeyPath) error {
 		return err
 	}
 
-	opt := github.ListOptions{PerPage: 100}
+	opt := github.ListOptions{PerPage: 100} //nolint: mnd
 	g.logger.WithFields(map[string]interface{}{
 		"owner":           owner,
 		"repository_name": repoName,

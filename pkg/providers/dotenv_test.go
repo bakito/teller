@@ -5,10 +5,9 @@ import (
 	"testing"
 
 	"github.com/alecthomas/assert"
-	"go.uber.org/mock/gomock"
-
 	"github.com/spectralops/teller/pkg/core"
 	"github.com/spectralops/teller/pkg/providers/mock_providers"
+	"go.uber.org/mock/gomock"
 )
 
 func TestDotenv(t *testing.T) {

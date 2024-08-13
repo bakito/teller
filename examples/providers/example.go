@@ -4,7 +4,6 @@ import (
 	"fmt"
 
 	"github.com/spectralops/teller/pkg/core"
-
 	"github.com/spectralops/teller/pkg/logging"
 )
 

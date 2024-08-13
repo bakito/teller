@@ -7,9 +7,8 @@ import (
 	"os"
 	"strings"
 
-	"github.com/spectralops/teller/pkg/core"
-
 	"github.com/mattn/lastpass-go"
+	"github.com/spectralops/teller/pkg/core"
 	"github.com/spectralops/teller/pkg/logging"
 )
 
@@ -148,7 +147,7 @@ func (l *LastPass) notesToMap(notes string) map[string]string {
 	results := map[string]string{}
 	scanner := bufio.NewScanner(strings.NewReader(notes))
 	for scanner.Scan() {
-		findings := strings.SplitN(scanner.Text(), ":", 2) //nolint: gomnd
+		findings := strings.SplitN(scanner.Text(), ":", 2) //nolint: mnd
 		if len(findings) == findingNoteCount {
 			results[strings.TrimSpace(findings[0])] = strings.TrimSpace(findings[1])
 		}
@@ -161,7 +160,7 @@ func (l *LastPass) getNodeByKeyName(key, notes string) (string, error) {
 
 	scanner := bufio.NewScanner(strings.NewReader(notes))
 	for scanner.Scan() {
-		findings := strings.SplitN(scanner.Text(), ":", 2) //nolint: gomnd
+		findings := strings.SplitN(scanner.Text(), ":", 2) //nolint: mnd
 		if len(findings) == findingNoteCount && findings[0] == key {
 			return strings.TrimSpace(findings[1]), nil
 		}
