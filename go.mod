@@ -5,12 +5,12 @@ go 1.22.6
 require (
 	cloud.google.com/go/secretmanager v1.13.6
 	github.com/1Password/connect-sdk-go v1.2.0
-	github.com/AlecAivazis/survey/v2 v2.2.8
+	github.com/AlecAivazis/survey/v2 v2.3.7
 	github.com/Azure/azure-sdk-for-go v52.5.0+incompatible
 	github.com/Azure/go-autorest/autorest v0.11.29
 	github.com/DopplerHQ/cli v0.0.0-20210309042056-414bede8a50e
-	github.com/alecthomas/assert v0.0.0-20170929043011-405dbfeb8e38
-	github.com/alecthomas/kong v0.2.15
+	github.com/alecthomas/assert v1.0.0
+	github.com/alecthomas/kong v0.9.0
 	github.com/aws/aws-sdk-go-v2 v1.24.1
 	github.com/aws/aws-sdk-go-v2/config v1.26.5
 	github.com/aws/aws-sdk-go-v2/service/secretsmanager v1.26.2
@@ -19,7 +19,7 @@ require (
 	github.com/cyberark/conjur-api-go v0.7.1
 	github.com/dghubble/sling v1.3.0
 	github.com/fatih/color v1.17.0
-	github.com/google/go-github/v43 v43.0.0
+	github.com/google/go-github/v63 v63.0.0
 	github.com/googleapis/gax-go/v2 v2.13.0
 	github.com/gopasspw/gopass v1.15.14
 	github.com/hashicorp/consul/api v1.8.1
@@ -43,7 +43,6 @@ require (
 	golang.org/x/crypto v0.25.0
 	golang.org/x/oauth2 v0.22.0
 	google.golang.org/api v0.191.0
-	gopkg.in/yaml.v2 v2.4.0
 	gopkg.in/yaml.v3 v3.0.1
 )
 
@@ -52,6 +51,7 @@ require (
 	cloud.google.com/go/auth/oauth2adapt v0.2.3 // indirect
 	cloud.google.com/go/compute/metadata v0.5.0 // indirect
 	cloud.google.com/go/iam v1.1.12 // indirect
+	github.com/alecthomas/assert/v2 v2.10.0 // indirect
 	github.com/aws/aws-sdk-go-v2/service/internal/accept-encoding v1.10.4 // indirect
 	github.com/felixge/httpsnoop v1.0.4 // indirect
 	github.com/go-logr/logr v1.4.2 // indirect
@@ -70,6 +70,7 @@ require (
 	google.golang.org/genproto v0.0.0-20240812133136-8ffd90a71988 // indirect
 	google.golang.org/genproto/googleapis/api v0.0.0-20240730163845-b1a4ccb954bf // indirect
 	google.golang.org/genproto/googleapis/rpc v0.0.0-20240730163845-b1a4ccb954bf // indirect
+	gopkg.in/yaml.v2 v2.4.0 // indirect
 )
 
 require (
@@ -88,7 +89,7 @@ require (
 	github.com/Microsoft/hcsshim v0.8.15 // indirect
 	github.com/ProtonMail/go-crypto v1.0.0 // indirect
 	github.com/alecthomas/colour v0.1.0 // indirect
-	github.com/alecthomas/repr v0.2.0 // indirect
+	github.com/alecthomas/repr v0.4.0 // indirect
 	github.com/alessio/shellescape v1.4.2 // indirect
 	github.com/armon/go-metrics v0.0.0-20180917152333-f0300d1749da // indirect
 	github.com/atotto/clipboard v0.1.4 // indirect
@@ -101,7 +102,7 @@ require (
 	github.com/aws/aws-sdk-go-v2/service/sso v1.18.7 // indirect
 	github.com/aws/aws-sdk-go-v2/service/ssooidc v1.21.7 // indirect
 	github.com/aws/aws-sdk-go-v2/service/sts v1.26.7 // indirect
-	github.com/aws/smithy-go v1.19.0 // indirect
+	github.com/aws/smithy-go v1.20.3 // indirect
 	github.com/bgentry/go-netrc v0.0.0-20140422174119-9fd32a8b3d3d // indirect
 	github.com/blang/semver/v4 v4.0.0 // indirect
 	github.com/caspr-io/yamlpath v0.0.0-20200722075116-502e8d113a9b // indirect
@@ -164,7 +165,7 @@ require (
 	github.com/rs/zerolog v1.33.0 // indirect
 	github.com/russross/blackfriday/v2 v2.1.0 // indirect
 	github.com/ryanuber/go-glob v1.0.0 // indirect
-	github.com/sergi/go-diff v1.1.0 // indirect
+	github.com/sergi/go-diff v1.2.0 // indirect
 	github.com/spf13/cobra v0.0.5 // indirect
 	github.com/spf13/pflag v1.0.5 // indirect
 	github.com/twpayne/go-pinentry v0.3.0 // indirect
