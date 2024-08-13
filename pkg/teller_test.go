@@ -528,18 +528,18 @@ FOO=2
 	content, err := os.ReadFile("../fixtures/sync/target.env")
 	assert.NoError(t, err)
 
-	assert.Equal(t, string(content), `FOO="1"
-ONE="1"
-THREE="3"
-TWO="2"`)
+	assert.Equal(t, string(content), `FOO=1
+ONE=1
+THREE=3
+TWO=2`)
 
 	content, err = os.ReadFile("../fixtures/sync/target2.env")
 	assert.NoError(t, err)
 
-	assert.Equal(t, string(content), `FOO="2"
-ONE="1"
-THREE="3"
-TWO="2"`)
+	assert.Equal(t, string(content), `FOO=2
+ONE=1
+THREE=3
+TWO=2`)
 }
 
 func TestTemplateFile(t *testing.T) {

@@ -1,3 +1,25 @@
 {
-  "$schema": "https://docs.renovatebot.com/renovate-schema.json"
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "packageRules": [
+    {
+      "matchPackagePrefixes": [
+        "github.com/aws/"
+      ],
+      "matchUpdateTypes": [
+        "minor",
+        "patch"
+      ],
+      "groupName": "aws"
+    },
+    {
+      "matchPackagePrefixes": [
+        "go.etcd.io/etcd/"
+      ],
+      "matchUpdateTypes": [
+        "minor",
+        "patch"
+      ],
+      "groupName": "etcd"
+    }
+  ]
 }
