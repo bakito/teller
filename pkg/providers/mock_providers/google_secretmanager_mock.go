@@ -16,7 +16,7 @@ import (
 	apiv1 "cloud.google.com/go/secretmanager/apiv1"
 	v2 "github.com/googleapis/gax-go/v2"
 	gomock "go.uber.org/mock/gomock"
-	v1 "google.golang.org/genproto/googleapis/cloud/secretmanager/v1"
+	v1 "cloud.google.com/go/secretmanager/apiv1/secretmanagerpb"
 )
 
 // MockGoogleSMClient is a mock of GoogleSMClient interface.
