@@ -19,7 +19,6 @@ require (
 	github.com/cyberark/conjur-api-go v0.7.1
 	github.com/dghubble/sling v1.3.0
 	github.com/fatih/color v1.17.0
-	github.com/golang/mock v1.6.0
 	github.com/google/go-github/v43 v43.0.0
 	github.com/googleapis/gax-go/v2 v2.13.0
 	github.com/gopasspw/gopass v1.15.14
@@ -44,7 +43,6 @@ require (
 	golang.org/x/crypto v0.25.0
 	golang.org/x/oauth2 v0.22.0
 	google.golang.org/api v0.191.0
-	google.golang.org/genproto v0.0.0-20240812133136-8ffd90a71988
 	gopkg.in/yaml.v2 v2.4.0
 	gopkg.in/yaml.v3 v3.0.1
 )
@@ -69,6 +67,7 @@ require (
 	go.opentelemetry.io/otel v1.24.0 // indirect
 	go.opentelemetry.io/otel/metric v1.24.0 // indirect
 	go.opentelemetry.io/otel/trace v1.24.0 // indirect
+	google.golang.org/genproto v0.0.0-20240812133136-8ffd90a71988 // indirect
 	google.golang.org/genproto/googleapis/api v0.0.0-20240730163845-b1a4ccb954bf // indirect
 	google.golang.org/genproto/googleapis/rpc v0.0.0-20240730163845-b1a4ccb954bf // indirect
 )
@@ -128,7 +127,6 @@ require (
 	github.com/golang/protobuf v1.5.4 // indirect
 	github.com/golang/snappy v0.0.4 // indirect
 	github.com/google/go-cmp v0.6.0 // indirect
-	github.com/google/go-github v17.0.0+incompatible // indirect
 	github.com/google/go-querystring v1.1.0 // indirect
 	github.com/google/uuid v1.6.0 // indirect
 	github.com/hashicorp/errwrap v1.1.0 // indirect
@@ -163,7 +161,6 @@ require (
 	github.com/pierrec/lz4 v2.0.5+incompatible // indirect
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
-	github.com/rogpeppe/go-internal v1.12.0 // indirect
 	github.com/rs/zerolog v1.33.0 // indirect
 	github.com/russross/blackfriday/v2 v2.1.0 // indirect
 	github.com/ryanuber/go-glob v1.0.0 // indirect

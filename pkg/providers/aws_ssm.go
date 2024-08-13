@@ -45,7 +45,7 @@ func init() {
 }
 
 func NewAWSSSM(logger logging.Logger) (core.Provider, error) {
-	customResolver := aws.EndpointResolverFunc(func(service, region string) (aws.Endpoint, error) {
+	customResolver := aws.EndpointResolverWithOptionsFunc(func(service, region string, options ...interface{}) (aws.Endpoint, error) {
 		awsEndpointOverride := os.Getenv("AWS_ENDPOINT")
 		if awsEndpointOverride != "" {
 			return aws.Endpoint{
@@ -59,7 +59,7 @@ func NewAWSSSM(logger logging.Logger) (core.Provider, error) {
 		return aws.Endpoint{}, &aws.EndpointNotFoundError{}
 	})
 
-	cfg, err := config.LoadDefaultConfig(context.TODO(), config.WithEndpointResolver(customResolver))
+	cfg, err := config.LoadDefaultConfig(context.TODO(), config.WithEndpointResolverWithOptions(customResolver))
 	if err != nil {
 		return nil, err
 	}
