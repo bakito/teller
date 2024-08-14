@@ -4,7 +4,7 @@ go 1.22.6
 
 require (
 	cloud.google.com/go/secretmanager v1.13.6
-	github.com/1Password/connect-sdk-go v1.2.0
+	github.com/1Password/connect-sdk-go v1.5.3
 	github.com/AlecAivazis/survey/v2 v2.3.7
 	github.com/Azure/azure-sdk-for-go v52.5.0+incompatible
 	github.com/Azure/go-autorest/autorest v0.11.29
@@ -169,8 +169,8 @@ require (
 	github.com/spf13/cobra v0.0.5 // indirect
 	github.com/spf13/pflag v1.0.5 // indirect
 	github.com/twpayne/go-pinentry v0.3.0 // indirect
-	github.com/uber/jaeger-client-go v2.25.0+incompatible // indirect
-	github.com/uber/jaeger-lib v2.4.0+incompatible // indirect
+	github.com/uber/jaeger-client-go v2.30.0+incompatible // indirect
+	github.com/uber/jaeger-lib v2.4.1+incompatible // indirect
 	github.com/urfave/cli/v2 v2.27.3 // indirect
 	github.com/xrash/smetrics v0.0.0-20240521201337-686a1a2994c1 // indirect
 	github.com/zalando/go-keyring v0.2.5 // indirect
