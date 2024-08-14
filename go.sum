@@ -11,6 +11,8 @@ cloud.google.com/go v0.115.0 h1:CnFSK6Xo3lDYRoBKEcAtia6VSC837/ZkJuRduSFnr14=
 cloud.google.com/go v0.115.0/go.mod h1:8jIM5vVgoAEoiVxQ/O4BFTfHqulPZgs/ufEzMcFMdWU=
 cloud.google.com/go/auth v0.8.0 h1:y8jUJLl/Fg+qNBWxP/Hox2ezJvjkrPb952PC1p0G6A4=
 cloud.google.com/go/auth v0.8.0/go.mod h1:qGVp/Y3kDRSDZ5gFD/XPUfYQ9xW1iI7q8RIRoCyBbJc=
+cloud.google.com/go/auth v0.8.1 h1:QZW9FjC5lZzN864p13YxvAtGUlQ+KgRL+8Sg45Z6vxo=
+cloud.google.com/go/auth v0.8.1/go.mod h1:qGVp/Y3kDRSDZ5gFD/XPUfYQ9xW1iI7q8RIRoCyBbJc=
 cloud.google.com/go/auth/oauth2adapt v0.2.3 h1:MlxF+Pd3OmSudg/b1yZ5lJwoXCEaeedAguodky1PcKI=
 cloud.google.com/go/auth/oauth2adapt v0.2.3/go.mod h1:tMQXOfZzFuNuUxOypHlQEXgdfX5cuhwU+ffUuXRJE8I=
 cloud.google.com/go/bigquery v1.0.1/go.mod h1:i/xbL2UlR5RvWAURpBYZTtm/cXjCha9lbfbpx4poX+o=
@@ -74,6 +76,7 @@ github.com/BurntSushi/xgb v0.0.0-20160522181843-27f122750802/go.mod h1:IVnqGOEym
 github.com/DataDog/datadog-go v3.2.0+incompatible/go.mod h1:LButxg5PwREeZtORoXG3tL4fMGNddJ+vMq1mwgfaqoQ=
 github.com/DopplerHQ/cli v0.0.0-20210309042056-414bede8a50e h1:X5yHJzv4R12/zF9PR6OlroESbv6Bbz+L5LlZWY+qGkw=
 github.com/DopplerHQ/cli v0.0.0-20210309042056-414bede8a50e/go.mod h1:BYiWQL3TJGl8TjMYVeWYxJJK46arOR4J/2urnIJE/jE=
+github.com/DopplerHQ/cli v0.5.10/go.mod h1:WmcigO8HEBBct6dWYfLwKKMDhpn3vWk3MNl60Co5JUw=
 github.com/HdrHistogram/hdrhistogram-go v1.1.2 h1:5IcZpTvzydCQeHzK4Ef/D5rrSqwxob0t8PQPMybUNFM=
 github.com/HdrHistogram/hdrhistogram-go v1.1.2/go.mod h1:yDgFjdqOqDEKOvasDdhWNXYg9BVp4O+o5f6V/ehm6Oo=
 github.com/Microsoft/go-winio v0.6.2 h1:F2VQgta7ecxGYO8k3ZZz3RS8fVIXVxONVUPlNERoyfY=
@@ -928,6 +931,8 @@ google.golang.org/api v0.9.0/go.mod h1:o4eAsZoiT+ibD93RtjEohWalFOjRDx6CVaqeizhEn
 google.golang.org/api v0.13.0/go.mod h1:iLdEw5Ide6rF15KTC1Kkl0iskquN2gFfn9o9XIsbkAI=
 google.golang.org/api v0.191.0 h1:cJcF09Z+4HAB2t5qTQM1ZtfL/PemsLFkcFG67qq2afk=
 google.golang.org/api v0.191.0/go.mod h1:tD5dsFGxFza0hnQveGfVk9QQYKcfp+VzgRqyXFxE0+E=
+google.golang.org/api v0.192.0 h1:PljqpNAfZaaSpS+TnANfnNAXKdzHM/B9bKhwRlo7JP0=
+google.golang.org/api v0.192.0/go.mod h1:9VcphjvAxPKLmSxVSzPlSRXy/5ARMEw5bf58WoVXafQ=
 google.golang.org/appengine v1.1.0/go.mod h1:EbEs0AVv82hx2wNQdGPgUI5lhzA/G0D9YwlJXL52JkM=
 google.golang.org/appengine v1.4.0/go.mod h1:xpcJRLb0r/rnEns0DIKYYv+WjYCduHsrkT7/EB5XEv4=
 google.golang.org/appengine v1.5.0/go.mod h1:xpcJRLb0r/rnEns0DIKYYv+WjYCduHsrkT7/EB5XEv4=
