@@ -5,6 +5,7 @@ package providers
 import (
 	"fmt"
 	"sort"
+	"time"
 
 	"github.com/DopplerHQ/cli/pkg/configuration"
 	"github.com/DopplerHQ/cli/pkg/http"
@@ -20,8 +21,8 @@ type DopplerClient interface {
 
 type dopplerClient struct{}
 
-func (dopplerClient) GetSecrets(host string, verifyTLS bool, apiKey, project, config string) ([]byte, http.Error) {
-	return http.GetSecrets(host, verifyTLS, apiKey, project, config)
+func (d dopplerClient) GetSecrets(host string, verifyTLS bool, apiKey, project, config string) ([]byte, http.Error) {
+	return http.GetSecrets(host, verifyTLS, apiKey, project, config, nil, false, time.Hour)
 }
 
 type Doppler struct {
@@ -67,9 +68,9 @@ func (h *Doppler) GetMapping(p core.KeyPath) ([]core.EnvEntry, error) {
 		return nil, err
 	}
 
-	entries := []core.EnvEntry{}
+	var entries []core.EnvEntry
 	for k, v := range s {
-		entries = append(entries, p.FoundWithKey(k, v.ComputedValue))
+		entries = append(entries, p.FoundWithKey(k, *v.ComputedValue))
 	}
 	sort.Sort(core.EntriesByKey(entries))
 	return entries, nil
@@ -94,7 +95,7 @@ func (h *Doppler) Get(p core.KeyPath) (*core.EnvEntry, error) {
 		return &ent, nil
 	}
 
-	ent := p.Found(v.ComputedValue)
+	ent := p.Found(*v.ComputedValue)
 
 	return &ent, nil
 }

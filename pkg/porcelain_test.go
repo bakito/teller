@@ -4,8 +4,8 @@ import (
 	"bytes"
 	"testing"
 
-	"github.com/alecthomas/assert"
 	"github.com/spectralops/teller/pkg/core"
+	"github.com/stretchr/testify/assert"
 )
 
 func TestPorcelainNonInteractive(t *testing.T) {

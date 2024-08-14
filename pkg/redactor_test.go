@@ -5,8 +5,8 @@ import (
 	"io"
 	"testing"
 
-	"github.com/alecthomas/assert"
 	"github.com/spectralops/teller/pkg/core"
+	"github.com/stretchr/testify/assert"
 )
 
 func TestRedactorOverlap(t *testing.T) {

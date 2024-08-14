@@ -4,10 +4,10 @@ import (
 	"errors"
 	"testing"
 
-	"github.com/alecthomas/assert"
 	"github.com/hashicorp/consul/api"
 	"github.com/spectralops/teller/pkg/core"
 	"github.com/spectralops/teller/pkg/providers/mock_providers"
+	"github.com/stretchr/testify/assert"
 	"go.uber.org/mock/gomock"
 )
 

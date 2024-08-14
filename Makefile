@@ -63,7 +63,7 @@ GOLANGCI_LINT ?= $(LOCALBIN)/golangci-lint
 MOCKGEN ?= $(LOCALBIN)/mockgen
 
 ## Tool Versions
-GOLANGCI_LINT_VERSION ?= v1.59.1
+GOLANGCI_LINT_VERSION ?= v1.60.1
 MOCKGEN_VERSION ?= v0.4.0
 
 ## Tool Installer

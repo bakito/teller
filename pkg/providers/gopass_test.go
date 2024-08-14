@@ -5,8 +5,8 @@ import (
 	"errors"
 	"testing"
 
-	"github.com/alecthomas/assert"
 	"github.com/gopasspw/gopass/pkg/gopass/secrets/secparse"
+	"github.com/stretchr/testify/assert"
 
 	// "github.com/gopasspw/gopass/pkg/gopass/secrets/secparse"
 	"github.com/spectralops/teller/pkg/core"

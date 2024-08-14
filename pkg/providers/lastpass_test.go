@@ -3,9 +3,9 @@ package providers
 import (
 	"testing"
 
-	"github.com/alecthomas/assert"
 	"github.com/mattn/lastpass-go"
 	"github.com/spectralops/teller/pkg/core"
+	"github.com/stretchr/testify/assert"
 )
 
 func TestLastPass(t *testing.T) {

@@ -5,9 +5,9 @@ import (
 	"testing"
 
 	"github.com/1Password/connect-sdk-go/onepassword"
-	"github.com/alecthomas/assert"
 	"github.com/spectralops/teller/pkg/core"
 	"github.com/spectralops/teller/pkg/providers/mock_providers"
+	"github.com/stretchr/testify/assert"
 	"go.uber.org/mock/gomock"
 )
 

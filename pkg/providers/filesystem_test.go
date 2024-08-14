@@ -5,8 +5,8 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/alecthomas/assert"
 	"github.com/spectralops/teller/pkg/core"
+	"github.com/stretchr/testify/assert"
 )
 
 func createMockDirectoryStructure(f *FileSystem) error {

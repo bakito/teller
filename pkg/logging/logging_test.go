@@ -6,7 +6,7 @@ import (
 	"errors"
 	"testing"
 
-	"github.com/alecthomas/assert"
+	"github.com/stretchr/testify/assert"
 )
 
 func TestSetOutput(t *testing.T) {

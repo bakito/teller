@@ -5,8 +5,8 @@ import (
 	"os"
 	"testing"
 
-	"github.com/alecthomas/assert"
 	"github.com/spectralops/teller/pkg/core"
+	"github.com/stretchr/testify/assert"
 )
 
 func TestGenerateProvidersMetaJSON(t *testing.T) {
