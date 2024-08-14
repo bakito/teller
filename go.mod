@@ -14,7 +14,8 @@ require (
 	github.com/aws/aws-sdk-go-v2/config v1.27.27
 	github.com/aws/aws-sdk-go-v2/service/secretsmanager v1.32.4
 	github.com/aws/aws-sdk-go-v2/service/ssm v1.52.4
-	github.com/cloudflare/cloudflare-go v0.25.0
+	github.com/cloudflare/cloudflare-go v0.102.0
+	github.com/cloudflare/cloudflare-go/v2 v2.4.0
 	github.com/cyberark/conjur-api-go v0.12.4
 	github.com/dghubble/sling v1.4.2
 	github.com/fatih/color v1.17.0
@@ -65,6 +66,7 @@ require (
 	github.com/go-logr/logr v1.4.2 // indirect
 	github.com/go-logr/stdr v1.2.2 // indirect
 	github.com/go-ole/go-ole v1.2.6 // indirect
+	github.com/goccy/go-json v0.10.3 // indirect
 	github.com/golang-jwt/jwt/v4 v4.5.0 // indirect
 	github.com/google/go-github/v61 v61.0.0 // indirect
 	github.com/google/s2a-go v0.1.8 // indirect
@@ -192,7 +194,7 @@ require (
 	go.uber.org/multierr v1.9.0 // indirect
 	go.uber.org/zap v1.17.0 // indirect
 	golang.org/x/exp v0.0.0-20240719175910-8a7402abbf56 // indirect
-	golang.org/x/net v0.27.0 // indirect
+	golang.org/x/net v0.28.0 // indirect
 	golang.org/x/sync v0.8.0 // indirect
 	golang.org/x/sys v0.23.0 // indirect
 	golang.org/x/term v0.23.0 // indirect
