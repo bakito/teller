@@ -16,7 +16,7 @@ require (
 	github.com/aws/aws-sdk-go-v2/service/secretsmanager v1.26.2
 	github.com/aws/aws-sdk-go-v2/service/ssm v1.44.7
 	github.com/cloudflare/cloudflare-go v0.25.0
-	github.com/cyberark/conjur-api-go v0.7.1
+	github.com/cyberark/conjur-api-go v0.12.4
 	github.com/dghubble/sling v1.3.0
 	github.com/fatih/color v1.17.0
 	github.com/google/go-github/v63 v63.0.0
@@ -31,7 +31,7 @@ require (
 	github.com/mattn/lastpass-go v0.0.0-20160926001517-82bef8502f75
 	github.com/mitchellh/go-homedir v1.1.0
 	github.com/samber/lo v1.11.0
-	github.com/sirupsen/logrus v1.7.0
+	github.com/sirupsen/logrus v1.8.1
 	github.com/sosedoff/ansible-vault-go v0.2.0
 	github.com/stretchr/testify v1.9.0
 	github.com/testcontainers/testcontainers-go v0.10.1-0.20210331130832-54854fb15ccb
