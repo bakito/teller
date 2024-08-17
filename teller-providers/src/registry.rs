@@ -90,6 +90,17 @@ impl Registry {
                     )
                     .await?,
                 ),
+
+
+                #[cfg(feature = "keepass")]
+                ProviderKind::Keepass => Box::new(crate::providers::keepass::Keepass::new(
+                    k,
+                    provider
+                        .options
+                        .clone()
+                        .map(serde_json::from_value)
+                        .transpose()?,
+                )?),
             };
             loaded_providers.insert(k.clone(), provider);
         }
