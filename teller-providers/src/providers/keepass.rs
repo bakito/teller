@@ -18,13 +18,11 @@
 use std::fs::File;
 use std::io::prelude::*;
 use std::{
-    collections::{BTreeMap, HashMap},
+    collections::{BTreeMap},
     env,
-    path::Path,
 };
 
 use async_trait::async_trait;
-use fs_err as fs;
 use serde_derive::{Deserialize, Serialize};
 use super::ProviderKind;
 use crate::config::ProviderInfo;
@@ -89,50 +87,6 @@ impl Keepass {
     }
 }
 
-fn load(path: &Path, mode: &Mode) -> Result<BTreeMap<String, String>> {
-    let content = fs::File::open(path)?;
-    let mut env = BTreeMap::new();
-
-    if mode == &Mode::Get {
-        let metadata = content.metadata().map_err(|e| Error::GetError {
-            path: format!("{path:?}"),
-            msg: format!("could not get file metadata. err: {e:?}"),
-        })?;
-
-        if metadata.len() == 0 {
-            return Err(Error::NotFound {
-                path: format!("{path:?}"),
-                msg: "file is empty".to_string(),
-            });
-        }
-    }
-
-    Ok(env)
-}
-// poor man's serialization, loses original comments and formatting
-fn save(path: &Path, data: &BTreeMap<String, String>) -> Result<String> {
-    let mut out = String::new();
-    for (k, v) in data {
-        let maybe_json: serde_json::Result<HashMap<String, serde_json::Value>> =
-            serde_json::from_str(v);
-
-        let json_value = if maybe_json.is_ok() {
-            serde_json::to_string(&v).map(Some).unwrap_or_default()
-        } else {
-            None
-        };
-
-        let value = json_value.unwrap_or_else(|| v.to_string());
-        if value.chars().any(char::is_whitespace) && !value.starts_with(['"', '\'']) {
-            out.push_str(&format!("{k}=\"{value}\"\n"));
-        } else {
-            out.push_str(&format!("{k}={value}\n"));
-        }
-    }
-
-    fs::write(path, &out)?;
-    Ok(out)
-}
 
 #[async_trait]
 impl Provider for Keepass {
@@ -144,8 +98,34 @@ impl Provider for Keepass {
     }
 
     async fn get(&self, pm: &PathMap) -> Result<Vec<KV>> {
-        let data = load(Path::new(&pm.path), &Mode::Get)?;
-        Ok(KV::from_data(&data, pm, &self.kind()))
+        let path = pm.path.split("/").ok_or_else(|| {
+            Error::Message(
+                "path must have initial mount seperated by '/', e.g. `secret/foo`".to_string(),
+            )
+        })?;
+        let nr = self.db.root.get(path.collect()).ok_or_else(|| {
+            Error::Message(
+                "could not find entry`".to_string(),
+            )
+        })?;
+
+        // source
+
+        let mut data = BTreeMap::new();
+
+
+        match nr {
+            kp::db::NodeRef::Group(g) => {
+                println!("Saw group '{0}'", g.name);
+            }
+            kp::db::NodeRef::Entry(e) => {
+                data.insert("title", e.get_title().unwrap_or("(no title)"));
+                data.insert("username", e.get_username().unwrap_or("(no user)"));
+                data.insert("password", e.get_password().unwrap_or("(no password)"));
+            }
+        }
+
+        Ok(data)
     }
 
     async fn put(&self, pm: &PathMap, kvs: &[KV]) -> Result<()> {
@@ -181,9 +161,7 @@ impl Provider for Keepass {
         Ok(())
     }
 }
-impl Keepass {
-
-}
+impl Keepass {}
 
 #[cfg(test)]
 mod tests {
