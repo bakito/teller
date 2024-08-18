@@ -16,7 +16,6 @@
 //!
 #![allow(clippy::borrowed_box)]
 use std::fs::File;
-use std::io::prelude::*;
 use std::{
     collections::{BTreeMap},
     env,
@@ -35,13 +34,6 @@ use keepass::{
 };
 
 use keepass as kp;
-
-#[derive(PartialEq)]
-enum Mode {
-    Get,
-    Put,
-    Del,
-}
 
 #[derive(Serialize, Deserialize, Debug, Clone, Default)]
 pub struct KeepassOptions {
@@ -62,8 +54,8 @@ impl Keepass {
     ///
     /// This function will return an error if cannot create a provider
     pub fn new(name: &str, opts: Option<KeepassOptions>) -> Result<Self> {
-        let mut db_path: String;
-        let mut password: String;
+        let mut db_path: String = String::new();
+        let mut password: String = String::new();
         if let Some(opts) = opts {
             if let Some(path) = opts.db_path {
                 db_path = path;
@@ -76,6 +68,7 @@ impl Keepass {
             db_path = env::var("KEEPASS_DB_PATH")?;
             password = env::var("KEEPASS_PASSWORD")?;
         };
+
         let mut file = File::open(&db_path)?;
         let key = kp::DatabaseKey::new().with_password(&password);
         let db = kp::Database::open(&mut file, key).map_err(Box::from)?;
@@ -98,66 +91,34 @@ impl Provider for Keepass {
     }
 
     async fn get(&self, pm: &PathMap) -> Result<Vec<KV>> {
-        let path = pm.path.split("/").ok_or_else(|| {
-            Error::Message(
-                "path must have initial mount seperated by '/', e.g. `secret/foo`".to_string(),
-            )
-        })?;
-        let nr = self.db.root.get(path.collect()).ok_or_else(|| {
+        let path: &[&str] = &pm.path.split('/').collect::<Vec<&str>>();
+
+        let nr = self.db.root.get(path).ok_or_else(|| {
             Error::Message(
                 "could not find entry`".to_string(),
             )
         })?;
 
-        // source
-
-        let mut data = BTreeMap::new();
-
+        let mut data: BTreeMap<String, String> = BTreeMap::new();
 
         match nr {
             kp::db::NodeRef::Group(g) => {
                 println!("Saw group '{0}'", g.name);
             }
             kp::db::NodeRef::Entry(e) => {
-                data.insert("title", e.get_title().unwrap_or("(no title)"));
-                data.insert("username", e.get_username().unwrap_or("(no user)"));
-                data.insert("password", e.get_password().unwrap_or("(no password)"));
+                data.insert("title".to_string(), e.get_title().unwrap_or("(no title)").to_string());
+                data.insert("username".to_string(), e.get_username().unwrap_or("(no user)").to_string());
+                data.insert("password".to_string(), e.get_password().unwrap_or("(no password)").to_string());
             }
         }
-
-        Ok(data)
+        Ok(KV::from_data(&data, pm, &self.kind()))
     }
 
-    async fn put(&self, pm: &PathMap, kvs: &[KV]) -> Result<()> {
-        // Create file if not exists + add the option to set is as false
-        self.load_modify_save(
-            pm,
-            |data| {
-                for kv in kvs {
-                    data.insert(kv.key.to_string(), kv.value.to_string());
-                }
-            },
-            &Mode::Put,
-        )?;
+    async fn put(&self, _: &PathMap, _: &[KV]) -> Result<()> {
         Ok(())
     }
 
-    async fn del(&self, pm: &PathMap) -> Result<()> {
-        self.load_modify_save(
-            pm,
-            |data| {
-                if pm.keys.is_empty() {
-                    data.clear();
-                } else {
-                    for k in pm.keys.keys() {
-                        if data.contains_key(k) {
-                            data.remove(k);
-                        }
-                    }
-                }
-            },
-            &Mode::Del,
-        )?;
+    async fn del(&self, _: &PathMap) -> Result<()> {
         Ok(())
     }
 }
@@ -177,7 +138,7 @@ mod tests {
         });
 
         let p: Box<dyn Provider + Send + Sync> = Box::new(
-            super::Keepass::new("keepass", Some(serde_json::from_value(opts).unwrap())).unwrap(),
+            Keepass::new("keepass", Some(serde_json::from_value(opts).unwrap())).unwrap(),
         ) as Box<dyn Provider + Send + Sync>;
 
         test_utils::ProviderTest::new(p)
