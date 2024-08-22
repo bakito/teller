@@ -1,6 +1,3 @@
-run:
-  go: 1.18
-
 linters-settings:
   dupl:
     threshold: 100
@@ -54,7 +51,6 @@ linters:
     - dogsled
     - dupl
     - errcheck
-    - exportloopref
     - exhaustive
     - funlen
     - gochecknoinits

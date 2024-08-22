@@ -5,7 +5,6 @@ import (
 	"errors"
 	"fmt"
 	"io"
-	"io/ioutil"
 	"os"
 	"path/filepath"
 	"sort"
@@ -565,7 +564,7 @@ func TestTemplateFile(t *testing.T) {
 	err = tl.templateFile(templatePath, destinationPath)
 	assert.NoError(t, err)
 
-	txt, err := ioutil.ReadFile(destinationPath)
+	txt, err := os.ReadFile(destinationPath)
 	assert.NoError(t, err)
 	assert.Equal(t, string(txt), "Hello, secret-here!")
 
@@ -609,11 +608,11 @@ func TestTemplateFolder(t *testing.T) {
 	assert.NoError(t, err)
 	fmt.Println(copyToFolder)
 
-	txt, err := ioutil.ReadFile(filepath.Join(copyToFolder, "target.tpl"))
+	txt, err := os.ReadFile(filepath.Join(copyToFolder, "target.tpl"))
 	assert.NoError(t, err)
 	assert.Equal(t, string(txt), "Hello, secret-here!")
 
-	txt, err = ioutil.ReadFile(filepath.Join(copyToFolder, "folder1", "folder2", "target2.tpl"))
+	txt, err = os.ReadFile(filepath.Join(copyToFolder, "folder1", "folder2", "target2.tpl"))
 	assert.NoError(t, err)
 	assert.Equal(t, string(txt), "Hello, secret2-here!")
 
@@ -632,7 +631,7 @@ func TestTellerDelete(t *testing.T) {
 		Logger:    getLogger(),
 		Providers: p,
 		Porcelain: &Porcelain{
-			Out: ioutil.Discard,
+			Out: io.Discard,
 		},
 		Populate: core.NewPopulate(map[string]string{"stage": "prod"}),
 		Config: &TellerFile{
@@ -682,7 +681,7 @@ func TestTellerDeleteAll(t *testing.T) {
 		Logger:    getLogger(),
 		Providers: p,
 		Porcelain: &Porcelain{
-			Out: ioutil.Discard,
+			Out: io.Discard,
 		},
 		Populate: core.NewPopulate(map[string]string{"stage": "prod"}),
 		Config: &TellerFile{
