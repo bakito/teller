@@ -11,7 +11,7 @@ require (
 	github.com/DopplerHQ/cli v0.5.11-0.20240701183518-e1684b2e0bd1
 	github.com/alecthomas/kong v0.9.0
 	github.com/aws/aws-sdk-go-v2 v1.30.4
-	github.com/aws/aws-sdk-go-v2/config v1.27.29
+	github.com/aws/aws-sdk-go-v2/config v1.27.30
 	github.com/aws/aws-sdk-go-v2/service/secretsmanager v1.32.5
 	github.com/aws/aws-sdk-go-v2/service/ssm v1.52.5
 	github.com/cloudflare/cloudflare-go v0.25.0
