@@ -13,7 +13,7 @@ require (
 	github.com/aws/aws-sdk-go-v2 v1.30.4
 	github.com/aws/aws-sdk-go-v2/config v1.27.29
 	github.com/aws/aws-sdk-go-v2/service/secretsmanager v1.32.5
-	github.com/aws/aws-sdk-go-v2/service/ssm v1.52.5
+	github.com/aws/aws-sdk-go-v2/service/ssm v1.52.6
 	github.com/cloudflare/cloudflare-go v0.25.0
 	github.com/cyberark/conjur-api-go v0.12.4
 	github.com/dghubble/sling v1.4.2
