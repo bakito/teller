@@ -18,7 +18,7 @@ require (
 	github.com/cyberark/conjur-api-go v0.12.4
 	github.com/dghubble/sling v1.4.2
 	github.com/fatih/color v1.17.0
-	github.com/google/go-github/v63 v63.0.0
+	github.com/google/go-github/v64 v64.0.0
 	github.com/google/go-github/v64 v64.0.0
 	github.com/googleapis/gax-go/v2 v2.13.0
 	github.com/gopasspw/gopass v1.15.14
