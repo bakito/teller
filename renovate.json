@@ -3,16 +3,6 @@
   "packageRules": [
     {
       "matchPackagePrefixes": [
-        "github.com/aws/"
-      ],
-      "matchUpdateTypes": [
-        "minor",
-        "patch"
-      ],
-      "groupName": "aws"
-    },
-    {
-      "matchPackagePrefixes": [
         "go.etcd.io/etcd/"
       ],
       "matchUpdateTypes": [
