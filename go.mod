@@ -22,7 +22,7 @@ require (
 	github.com/google/go-github/v64 v64.0.0
 	github.com/googleapis/gax-go/v2 v2.13.0
 	github.com/gopasspw/gopass v1.15.14
-	github.com/hashicorp/consul/api v1.29.3
+	github.com/hashicorp/consul/api v1.29.4
 	github.com/hashicorp/vault/api v1.14.0
 	github.com/heroku/heroku-go/v5 v5.5.0
 	github.com/jftuga/ellipsis v1.0.0
