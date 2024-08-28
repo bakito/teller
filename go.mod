@@ -14,7 +14,7 @@ require (
 	github.com/aws/aws-sdk-go-v2/config v1.27.31
 	github.com/aws/aws-sdk-go-v2/service/secretsmanager v1.32.6
 	github.com/aws/aws-sdk-go-v2/service/ssm v1.52.6
-	github.com/cloudflare/cloudflare-go v0.25.0
+	github.com/cloudflare/cloudflare-go v0.103.0
 	github.com/cyberark/conjur-api-go v0.12.4
 	github.com/dghubble/sling v1.4.2
 	github.com/fatih/color v1.17.0
@@ -66,6 +66,7 @@ require (
 	github.com/go-logr/logr v1.4.2 // indirect
 	github.com/go-logr/stdr v1.2.2 // indirect
 	github.com/go-ole/go-ole v1.2.6 // indirect
+	github.com/goccy/go-json v0.10.3 // indirect
 	github.com/golang-jwt/jwt/v4 v4.5.0 // indirect
 	github.com/google/go-github/v61 v61.0.0 // indirect
 	github.com/google/s2a-go v0.1.8 // indirect
@@ -185,7 +186,7 @@ require (
 	github.com/twpayne/go-pinentry v0.3.0 // indirect
 	github.com/uber/jaeger-client-go v2.30.0+incompatible // indirect
 	github.com/uber/jaeger-lib v2.4.1+incompatible // indirect
-	github.com/urfave/cli/v2 v2.27.3 // indirect
+	github.com/urfave/cli/v2 v2.27.4 // indirect
 	github.com/xrash/smetrics v0.0.0-20240521201337-686a1a2994c1 // indirect
 	github.com/zalando/go-keyring v0.2.5 // indirect
 	go.opencensus.io v0.24.0 // indirect
