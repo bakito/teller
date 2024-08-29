@@ -42,7 +42,7 @@ require (
 	go.uber.org/mock v0.4.0
 	golang.org/x/crypto v0.26.0
 	golang.org/x/oauth2 v0.22.0
-	google.golang.org/api v0.194.0
+	google.golang.org/api v0.195.0
 	gopkg.in/yaml.v3 v3.0.1
 )
 
@@ -94,9 +94,9 @@ require (
 	go.opentelemetry.io/otel v1.28.0 // indirect
 	go.opentelemetry.io/otel/metric v1.28.0 // indirect
 	go.opentelemetry.io/otel/trace v1.28.0 // indirect
-	google.golang.org/genproto v0.0.0-20240814211410-ddb44dafa142 // indirect
+	google.golang.org/genproto v0.0.0-20240823204242-4ba0660f739c // indirect
 	google.golang.org/genproto/googleapis/api v0.0.0-20240814211410-ddb44dafa142 // indirect
-	google.golang.org/genproto/googleapis/rpc v0.0.0-20240814211410-ddb44dafa142 // indirect
+	google.golang.org/genproto/googleapis/rpc v0.0.0-20240823204242-4ba0660f739c // indirect
 	gopkg.in/yaml.v2 v2.4.0 // indirect
 )
 
