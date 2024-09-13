@@ -75,6 +75,8 @@ github.com/DataDog/datadog-go v3.2.0+incompatible/go.mod h1:LButxg5PwREeZtORoXG3
 github.com/DopplerHQ/cli v0.5.10/go.mod h1:WmcigO8HEBBct6dWYfLwKKMDhpn3vWk3MNl60Co5JUw=
 github.com/DopplerHQ/cli v0.5.11-0.20240701183518-e1684b2e0bd1 h1:38qQTdMuChyQwG1KvwJ9u3zEMu9oLTqQRy2UVJ1xhPE=
 github.com/DopplerHQ/cli v0.5.11-0.20240701183518-e1684b2e0bd1/go.mod h1:d36p7UnS5GKHjBnRZPB657YcN1Fh1wycbmwQxGQz53U=
+github.com/DopplerHQ/cli v0.5.11-0.20240912131114-f9591363c600 h1:qtOXrl3yH5nEojIF+V8ygo5r4Jdl3EHAz9tilxJ6Ce4=
+github.com/DopplerHQ/cli v0.5.11-0.20240912131114-f9591363c600/go.mod h1:d36p7UnS5GKHjBnRZPB657YcN1Fh1wycbmwQxGQz53U=
 github.com/HdrHistogram/hdrhistogram-go v1.1.2 h1:5IcZpTvzydCQeHzK4Ef/D5rrSqwxob0t8PQPMybUNFM=
 github.com/HdrHistogram/hdrhistogram-go v1.1.2/go.mod h1:yDgFjdqOqDEKOvasDdhWNXYg9BVp4O+o5f6V/ehm6Oo=
 github.com/Microsoft/go-winio v0.6.2 h1:F2VQgta7ecxGYO8k3ZZz3RS8fVIXVxONVUPlNERoyfY=
