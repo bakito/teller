@@ -40,7 +40,7 @@ require (
 	go.etcd.io/etcd/client/v3 v3.5.17
 	go.uber.org/mock v0.4.0
 	golang.org/x/crypto v0.28.0
-	golang.org/x/oauth2 v0.23.0
+	golang.org/x/oauth2 v0.24.0
 	google.golang.org/api v0.203.0
 	gopkg.in/yaml.v3 v3.0.1
 )
