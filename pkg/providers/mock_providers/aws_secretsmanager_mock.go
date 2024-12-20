@@ -21,6 +21,7 @@ import (
 type MockAWSSecretsManagerClient struct {
 	ctrl     *gomock.Controller
 	recorder *MockAWSSecretsManagerClientMockRecorder
+	isgomock struct{}
 }
 
 // MockAWSSecretsManagerClientMockRecorder is the mock recorder for MockAWSSecretsManagerClient.

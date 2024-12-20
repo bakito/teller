@@ -20,6 +20,7 @@ import (
 type MockKsmClient struct {
 	ctrl     *gomock.Controller
 	recorder *MockKsmClientMockRecorder
+	isgomock struct{}
 }
 
 // MockKsmClientMockRecorder is the mock recorder for MockKsmClient.

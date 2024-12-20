@@ -13,7 +13,7 @@ import (
 	context "context"
 	reflect "reflect"
 
-	cloudflare_go "github.com/cloudflare/cloudflare-go"
+	cloudflare "github.com/cloudflare/cloudflare-go"
 	gomock "go.uber.org/mock/gomock"
 )
 
@@ -21,6 +21,7 @@ import (
 type MockCloudflareClient struct {
 	ctrl     *gomock.Controller
 	recorder *MockCloudflareClientMockRecorder
+	isgomock struct{}
 }
 
 // MockCloudflareClientMockRecorder is the mock recorder for MockCloudflareClient.
@@ -41,10 +42,10 @@ func (m *MockCloudflareClient) EXPECT() *MockCloudflareClientMockRecorder {
 }
 
 // ListWorkersKVs mocks base method.
-func (m *MockCloudflareClient) ListWorkersKVs(ctx context.Context, namespaceID string) (cloudflare_go.ListStorageKeysResponse, error) {
+func (m *MockCloudflareClient) ListWorkersKVs(ctx context.Context, namespaceID string) (cloudflare.ListStorageKeysResponse, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListWorkersKVs", ctx, namespaceID)
-	ret0, _ := ret[0].(cloudflare_go.ListStorageKeysResponse)
+	ret0, _ := ret[0].(cloudflare.ListStorageKeysResponse)
 	ret1, _ := ret[1].(error)
 	return ret0, ret1
 }
@@ -71,10 +72,10 @@ func (mr *MockCloudflareClientMockRecorder) ReadWorkersKV(ctx, namespaceID, key 
 }
 
 // WriteWorkersKV mocks base method.
-func (m *MockCloudflareClient) WriteWorkersKV(ctx context.Context, namespaceID, key string, value []byte) (cloudflare_go.Response, error) {
+func (m *MockCloudflareClient) WriteWorkersKV(ctx context.Context, namespaceID, key string, value []byte) (cloudflare.Response, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "WriteWorkersKV", ctx, namespaceID, key, value)
-	ret0, _ := ret[0].(cloudflare_go.Response)
+	ret0, _ := ret[0].(cloudflare.Response)
 	ret1, _ := ret[1].(error)
 	return ret0, ret1
 }
@@ -86,10 +87,10 @@ func (mr *MockCloudflareClientMockRecorder) WriteWorkersKV(ctx, namespaceID, key
 }
 
 // WriteWorkersKVBulk mocks base method.
-func (m *MockCloudflareClient) WriteWorkersKVBulk(ctx context.Context, namespaceID string, kvs cloudflare_go.WorkersKVBulkWriteRequest) (cloudflare_go.Response, error) {
+func (m *MockCloudflareClient) WriteWorkersKVBulk(ctx context.Context, namespaceID string, kvs cloudflare.WorkersKVBulkWriteRequest) (cloudflare.Response, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "WriteWorkersKVBulk", ctx, namespaceID, kvs)
-	ret0, _ := ret[0].(cloudflare_go.Response)
+	ret0, _ := ret[0].(cloudflare.Response)
 	ret1, _ := ret[1].(error)
 	return ret0, ret1
 }

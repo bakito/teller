@@ -21,6 +21,7 @@ import (
 type MockAWSSSMClient struct {
 	ctrl     *gomock.Controller
 	recorder *MockAWSSSMClientMockRecorder
+	isgomock struct{}
 }
 
 // MockAWSSSMClientMockRecorder is the mock recorder for MockAWSSSMClient.

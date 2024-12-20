@@ -20,6 +20,7 @@ import (
 type MockOnePasswordClient struct {
 	ctrl     *gomock.Controller
 	recorder *MockOnePasswordClientMockRecorder
+	isgomock struct{}
 }
 
 // MockOnePasswordClientMockRecorder is the mock recorder for MockOnePasswordClient.

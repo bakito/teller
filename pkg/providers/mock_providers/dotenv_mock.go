@@ -19,6 +19,7 @@ import (
 type MockDotEnvClient struct {
 	ctrl     *gomock.Controller
 	recorder *MockDotEnvClientMockRecorder
+	isgomock struct{}
 }
 
 // MockDotEnvClientMockRecorder is the mock recorder for MockDotEnvClient.

@@ -13,9 +13,9 @@ import (
 	context "context"
 	reflect "reflect"
 
-	apiv1 "cloud.google.com/go/secretmanager/apiv1"
-	v1 "cloud.google.com/go/secretmanager/apiv1/secretmanagerpb"
-	v2 "github.com/googleapis/gax-go/v2"
+	secretmanager "cloud.google.com/go/secretmanager/apiv1"
+	secretmanagerpb "cloud.google.com/go/secretmanager/apiv1/secretmanagerpb"
+	gax "github.com/googleapis/gax-go/v2"
 	gomock "go.uber.org/mock/gomock"
 )
 
@@ -23,6 +23,7 @@ import (
 type MockGoogleSMClient struct {
 	ctrl     *gomock.Controller
 	recorder *MockGoogleSMClientMockRecorder
+	isgomock struct{}
 }
 
 // MockGoogleSMClientMockRecorder is the mock recorder for MockGoogleSMClient.
@@ -43,14 +44,14 @@ func (m *MockGoogleSMClient) EXPECT() *MockGoogleSMClientMockRecorder {
 }
 
 // AccessSecretVersion mocks base method.
-func (m *MockGoogleSMClient) AccessSecretVersion(ctx context.Context, req *v1.AccessSecretVersionRequest, opts ...v2.CallOption) (*v1.AccessSecretVersionResponse, error) {
+func (m *MockGoogleSMClient) AccessSecretVersion(ctx context.Context, req *secretmanagerpb.AccessSecretVersionRequest, opts ...gax.CallOption) (*secretmanagerpb.AccessSecretVersionResponse, error) {
 	m.ctrl.T.Helper()
 	varargs := []any{ctx, req}
 	for _, a := range opts {
 		varargs = append(varargs, a)
 	}
 	ret := m.ctrl.Call(m, "AccessSecretVersion", varargs...)
-	ret0, _ := ret[0].(*v1.AccessSecretVersionResponse)
+	ret0, _ := ret[0].(*secretmanagerpb.AccessSecretVersionResponse)
 	ret1, _ := ret[1].(error)
 	return ret0, ret1
 }
@@ -63,14 +64,14 @@ func (mr *MockGoogleSMClientMockRecorder) AccessSecretVersion(ctx, req any, opts
 }
 
 // AddSecretVersion mocks base method.
-func (m *MockGoogleSMClient) AddSecretVersion(ctx context.Context, req *v1.AddSecretVersionRequest, opts ...v2.CallOption) (*v1.SecretVersion, error) {
+func (m *MockGoogleSMClient) AddSecretVersion(ctx context.Context, req *secretmanagerpb.AddSecretVersionRequest, opts ...gax.CallOption) (*secretmanagerpb.SecretVersion, error) {
 	m.ctrl.T.Helper()
 	varargs := []any{ctx, req}
 	for _, a := range opts {
 		varargs = append(varargs, a)
 	}
 	ret := m.ctrl.Call(m, "AddSecretVersion", varargs...)
-	ret0, _ := ret[0].(*v1.SecretVersion)
+	ret0, _ := ret[0].(*secretmanagerpb.SecretVersion)
 	ret1, _ := ret[1].(error)
 	return ret0, ret1
 }
@@ -83,14 +84,14 @@ func (mr *MockGoogleSMClientMockRecorder) AddSecretVersion(ctx, req any, opts ..
 }
 
 // DestroySecretVersion mocks base method.
-func (m *MockGoogleSMClient) DestroySecretVersion(ctx context.Context, req *v1.DestroySecretVersionRequest, opts ...v2.CallOption) (*v1.SecretVersion, error) {
+func (m *MockGoogleSMClient) DestroySecretVersion(ctx context.Context, req *secretmanagerpb.DestroySecretVersionRequest, opts ...gax.CallOption) (*secretmanagerpb.SecretVersion, error) {
 	m.ctrl.T.Helper()
 	varargs := []any{ctx, req}
 	for _, a := range opts {
 		varargs = append(varargs, a)
 	}
 	ret := m.ctrl.Call(m, "DestroySecretVersion", varargs...)
-	ret0, _ := ret[0].(*v1.SecretVersion)
+	ret0, _ := ret[0].(*secretmanagerpb.SecretVersion)
 	ret1, _ := ret[1].(error)
 	return ret0, ret1
 }
@@ -103,14 +104,14 @@ func (mr *MockGoogleSMClientMockRecorder) DestroySecretVersion(ctx, req any, opt
 }
 
 // ListSecrets mocks base method.
-func (m *MockGoogleSMClient) ListSecrets(ctx context.Context, in *v1.ListSecretsRequest, opts ...v2.CallOption) *apiv1.SecretIterator {
+func (m *MockGoogleSMClient) ListSecrets(ctx context.Context, in *secretmanagerpb.ListSecretsRequest, opts ...gax.CallOption) *secretmanager.SecretIterator {
 	m.ctrl.T.Helper()
 	varargs := []any{ctx, in}
 	for _, a := range opts {
 		varargs = append(varargs, a)
 	}
 	ret := m.ctrl.Call(m, "ListSecrets", varargs...)
-	ret0, _ := ret[0].(*apiv1.SecretIterator)
+	ret0, _ := ret[0].(*secretmanager.SecretIterator)
 	return ret0
 }
 

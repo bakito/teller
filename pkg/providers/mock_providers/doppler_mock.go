@@ -20,6 +20,7 @@ import (
 type MockDopplerClient struct {
 	ctrl     *gomock.Controller
 	recorder *MockDopplerClientMockRecorder
+	isgomock struct{}
 }
 
 // MockDopplerClientMockRecorder is the mock recorder for MockDopplerClient.

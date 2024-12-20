@@ -19,6 +19,7 @@ import (
 type MockVercelClient struct {
 	ctrl     *gomock.Controller
 	recorder *MockVercelClientMockRecorder
+	isgomock struct{}
 }
 
 // MockVercelClientMockRecorder is the mock recorder for MockVercelClient.

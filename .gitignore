@@ -10,3 +10,4 @@ fixtures/sync/target.env
 dist/
 .idea
 bin
+target

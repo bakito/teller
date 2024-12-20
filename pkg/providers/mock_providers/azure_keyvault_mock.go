@@ -21,6 +21,7 @@ import (
 type MockAzureKeyVaultClient struct {
 	ctrl     *gomock.Controller
 	recorder *MockAzureKeyVaultClientMockRecorder
+	isgomock struct{}
 }
 
 // MockAzureKeyVaultClientMockRecorder is the mock recorder for MockAzureKeyVaultClient.

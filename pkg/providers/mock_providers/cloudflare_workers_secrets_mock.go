@@ -13,7 +13,7 @@ import (
 	context "context"
 	reflect "reflect"
 
-	cloudflare_go "github.com/cloudflare/cloudflare-go"
+	cloudflare "github.com/cloudflare/cloudflare-go"
 	gomock "go.uber.org/mock/gomock"
 )
 
@@ -21,6 +21,7 @@ import (
 type MockCloudflareSecretsClient struct {
 	ctrl     *gomock.Controller
 	recorder *MockCloudflareSecretsClientMockRecorder
+	isgomock struct{}
 }
 
 // MockCloudflareSecretsClientMockRecorder is the mock recorder for MockCloudflareSecretsClient.
@@ -41,10 +42,10 @@ func (m *MockCloudflareSecretsClient) EXPECT() *MockCloudflareSecretsClientMockR
 }
 
 // DeleteWorkersSecret mocks base method.
-func (m *MockCloudflareSecretsClient) DeleteWorkersSecret(ctx context.Context, script, secretName string) (cloudflare_go.Response, error) {
+func (m *MockCloudflareSecretsClient) DeleteWorkersSecret(ctx context.Context, script, secretName string) (cloudflare.Response, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteWorkersSecret", ctx, script, secretName)
-	ret0, _ := ret[0].(cloudflare_go.Response)
+	ret0, _ := ret[0].(cloudflare.Response)
 	ret1, _ := ret[1].(error)
 	return ret0, ret1
 }
@@ -56,10 +57,10 @@ func (mr *MockCloudflareSecretsClientMockRecorder) DeleteWorkersSecret(ctx, scri
 }
 
 // SetWorkersSecret mocks base method.
-func (m *MockCloudflareSecretsClient) SetWorkersSecret(ctx context.Context, script string, req *cloudflare_go.WorkersPutSecretRequest) (cloudflare_go.WorkersPutSecretResponse, error) {
+func (m *MockCloudflareSecretsClient) SetWorkersSecret(ctx context.Context, script string, req *cloudflare.WorkersPutSecretRequest) (cloudflare.WorkersPutSecretResponse, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "SetWorkersSecret", ctx, script, req)
-	ret0, _ := ret[0].(cloudflare_go.WorkersPutSecretResponse)
+	ret0, _ := ret[0].(cloudflare.WorkersPutSecretResponse)
 	ret1, _ := ret[1].(error)
 	return ret0, ret1
 }
