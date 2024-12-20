@@ -4,6 +4,7 @@ import (
 	"errors"
 	"fmt"
 	"os"
+	"sort"
 	"strings"
 
 	"github.com/spectralops/teller/pkg/core"
@@ -23,7 +24,7 @@ type KeyPass struct {
 
 const KeyPassName = "KeyPass"
 
-//nolint
+// nolint
 func init() {
 	metaInfo := core.MetaInfo{
 		Description:    "Keypass",
@@ -98,7 +99,7 @@ func (k *KeyPass) PutMapping(p core.KeyPath, m map[string]string) error {
 // GetMapping returns a multiple entries
 func (k *KeyPass) GetMapping(p core.KeyPath) ([]core.EnvEntry, error) {
 
-	results := []core.EnvEntry{}
+	var results []core.EnvEntry
 	for path, entry := range k.data { //nolint
 		// get entries that start with the given path
 		if strings.HasPrefix(path, p.Path) {
@@ -152,9 +153,22 @@ func (k *KeyPass) Get(p core.KeyPath) (*core.EnvEntry, error) {
 		"path":   p.Path,
 		"source": source,
 	}).Debug("get keypass field")
-	ent = p.Found(entry.Get(source).Value.Content)
+	value := entry.Get(source)
+	if value == nil {
+		return nil, fmt.Errorf("%v source: %s not exists in path: %s - Possible soruces: [%v]", KeyPassName, source, p.Path, sources(entry))
+	}
+	ent = p.Found(value.Value.Content)
 
 	return &ent, nil
+}
+
+func sources(e gokeepasslib.Entry) string {
+	var s []string
+	for _, val := range e.Values {
+		s = append(s, val.Key)
+	}
+	sort.Strings(s)
+	return strings.Join(s, ",")
 }
 
 // Delete will delete entry
