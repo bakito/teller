@@ -530,8 +530,8 @@ github.com/tklauser/numcpus v0.6.1 h1:ng9scYS7az0Bk4OZLvrNXNSAO2Pxr1XXRAPyjhIx+F
 github.com/tklauser/numcpus v0.6.1/go.mod h1:1XfjsgE2zo8GVw7POkMbHENHzVg3GzmoZ9fESEdAacY=
 github.com/tobischo/argon2 v0.1.0 h1:mwAx/9DK/4rP0xzNifb/XMAf43dU3eG1B3aeF88qu4Y=
 github.com/tobischo/argon2 v0.1.0/go.mod h1:4NLmLFwhWPbT66nRZNgcktV/mibJ6fESoeEp43h9GRw=
-github.com/tobischo/gokeepasslib/v3 v3.6.0 h1:7SVV7WNvW8EGb0UYETj2IwjbgfqKEmij2gUnndXSIxk=
-github.com/tobischo/gokeepasslib/v3 v3.6.0/go.mod h1:/T7C3zga6hsbLoLIzNN8wQ5OpeYEF81mEuUYF0CciA8=
+github.com/tobischo/gokeepasslib/v3 v3.6.1 h1:AShQlTypdM19glj0UUePQcUi56qQyeFI5NcrWnVFudA=
+github.com/tobischo/gokeepasslib/v3 v3.6.1/go.mod h1:B31dx/dj0egameQrNtuoOx9RnwxnYaZR4kXaahRuZN8=
 github.com/tv42/httpunix v0.0.0-20150427012821-b75d8614f926/go.mod h1:9ESjWnEqriFuLhtthL60Sar/7RFoluCcXsuvEwTV5KM=
 github.com/twpayne/go-pinentry v0.3.0 h1:Rr+fEOZXmeItOb4thjeVaBWJKB9Xa/eojolycyF/26c=
 github.com/twpayne/go-pinentry v0.3.0/go.mod h1:iOIZD+9np/2V24OdCGos7Y1/xX90wc6VEAZsgb+r9D4=
