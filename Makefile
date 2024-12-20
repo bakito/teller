@@ -35,8 +35,13 @@ integration_api:
 deps:
 	go mod tidy && go mod vendor
 
-release: tb.goreleaser
-	$(TB_GORELEASER) --rm-dist
+release: tb.goreleaser tb.semver
+	@version=$$($(TB_SEMVER)); \
+	git tag -s $$version -m"Release $$version"
+	$(TB_GORELEASER) --clean
+
+test-release: tb.goreleaser
+	$(TB_GORELEASER) --skip=publish --snapshot --clean
 
 build:
 	go build -ldflags "-s -w -X main.version=0.0.0 -X main.commit=0000000000000000000000000000000000000000 -X main.date=2022-01-01"
