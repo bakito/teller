@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"os"
 
-	cloudflare "github.com/cloudflare/cloudflare-go"
+	cloudflare "github.com/cloudflare/cloudflare-go/v3"
 	"github.com/spectralops/teller/pkg/core"
 	"github.com/spectralops/teller/pkg/logging"
 )
@@ -27,7 +27,7 @@ type CloudflareSecrets struct {
 
 const CloudflareWorkersSecretName = "cloudflare_workers_secret"
 
-//nolint
+// nolint
 func init() {
 	metaInfo := core.MetaInfo{
 		Description:    "Cloudflare Workers Secrets",

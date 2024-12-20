@@ -6,7 +6,7 @@ import (
 	"os"
 	"sort"
 
-	cloudflare "github.com/cloudflare/cloudflare-go"
+	cloudflare "github.com/cloudflare/cloudflare-go/v3"
 	"github.com/spectralops/teller/pkg/core"
 	"github.com/spectralops/teller/pkg/logging"
 )
@@ -25,7 +25,7 @@ type Cloudflare struct {
 
 const cloudFlareWorkersKVName = "cloudflare_workers_kv"
 
-//nolint
+// nolint
 func init() {
 	metaInfo := core.MetaInfo{
 		Description:    "Cloudflare Workers K/V",

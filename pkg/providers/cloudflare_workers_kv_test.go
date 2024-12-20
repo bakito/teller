@@ -4,7 +4,7 @@ import (
 	"errors"
 	"testing"
 
-	cloudflare "github.com/cloudflare/cloudflare-go"
+	cloudflare "github.com/cloudflare/cloudflare-go/v3"
 	"github.com/spectralops/teller/pkg/core"
 	"github.com/spectralops/teller/pkg/providers/mock_providers"
 	"github.com/stretchr/testify/assert"

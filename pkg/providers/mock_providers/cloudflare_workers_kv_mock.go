@@ -13,7 +13,7 @@ import (
 	context "context"
 	reflect "reflect"
 
-	cloudflare "github.com/cloudflare/cloudflare-go"
+	cloudflare "github.com/cloudflare/cloudflare-go/v3"
 	gomock "go.uber.org/mock/gomock"
 )
 
