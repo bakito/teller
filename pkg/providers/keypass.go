@@ -7,6 +7,8 @@ import (
 	"sort"
 	"strings"
 
+	"github.com/spectralops/teller/pkg/utils"
+
 	"github.com/spectralops/teller/pkg/core"
 	"github.com/spectralops/teller/pkg/logging"
 	"github.com/tobischo/gokeepasslib/v3"
@@ -24,7 +26,7 @@ type KeyPass struct {
 
 const KeyPassName = "KeyPass"
 
-// nolint
+//nolint
 func init() {
 	metaInfo := core.MetaInfo{
 		Description:    "Keypass",
@@ -53,8 +55,15 @@ func init() {
 // NewKeyPass creates new provider instance
 func NewKeyPass(logger logging.Logger) (core.Provider, error) {
 	password := os.Getenv("KEYPASS_PASSWORD")
+	var err error
 	if password == "" {
-		return nil, errors.New("missing `KEYPASS_PASSWORD`")
+		password, err = utils.PromptPassword("keypass")
+		if err != nil {
+			return nil, err
+		}
+		if password == "" {
+			return nil, errors.New("missing `KEYPASS_PASSWORD`")
+		}
 	}
 	dbPath := os.Getenv("KEYPASS_DB_PATH")
 	if dbPath == "" {
