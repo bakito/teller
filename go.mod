@@ -14,7 +14,7 @@ require (
 	github.com/aws/aws-sdk-go-v2/config v1.28.7
 	github.com/aws/aws-sdk-go-v2/service/secretsmanager v1.34.8
 	github.com/aws/aws-sdk-go-v2/service/ssm v1.56.2
-	github.com/cloudflare/cloudflare-go v0.25.0
+	github.com/cloudflare/cloudflare-go v0.112.0
 	github.com/cyberark/conjur-api-go v0.12.9
 	github.com/dghubble/sling v1.4.2
 	github.com/fatih/color v1.18.0
@@ -64,6 +64,7 @@ require (
 	github.com/go-logr/logr v1.4.2 // indirect
 	github.com/go-logr/stdr v1.2.2 // indirect
 	github.com/go-ole/go-ole v1.2.6 // indirect
+	github.com/goccy/go-json v0.10.4 // indirect
 	github.com/golang-jwt/jwt/v4 v4.5.0 // indirect
 	github.com/google/go-github/v61 v61.0.0 // indirect
 	github.com/google/s2a-go v0.1.8 // indirect
