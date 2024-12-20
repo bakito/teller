@@ -9,7 +9,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/google/go-github/v63/github"
+	"github.com/google/go-github/v67/github"
 	"github.com/spectralops/teller/pkg/core"
 	"github.com/spectralops/teller/pkg/logging"
 	"golang.org/x/crypto/nacl/box"
@@ -36,7 +36,7 @@ type GitHub struct {
 // NewGitHub create new GitHub provider
 const GithubName = "GitHub"
 
-//nolint
+// nolint
 func init() {
 	metaInfo := core.MetaInfo{
 		Description:    "Github",
