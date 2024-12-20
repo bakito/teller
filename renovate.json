@@ -10,6 +10,12 @@
       "matchPackageNames": [
         "go.etcd.io/etcd/{/,}**"
       ]
+    },
+    {
+      "matchPackageNames": [
+        "github.com/cloudflare/cloudflare-go"
+      ],
+      "enabled": false
     }
   ]
 }
