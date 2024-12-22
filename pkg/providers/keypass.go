@@ -199,12 +199,12 @@ func (k *KeyPass) prepareGroups(path string, groups []gokeepasslib.Group, mapDat
 		// if entries found, adding the entry data fo the list
 		if len(group.Entries) > 0 {
 			for _, entry := range group.Entries { //nolint
-				if path == "" { // prevent unexpected leading slash for entries in root
-					mapData[fmt.Sprintf("%s/%s", group.Name, entry.GetTitle())] = entry
-				} else {
-					mapData[fmt.Sprintf("%s/%s/%s", path, group.Name, entry.GetTitle())] = entry
+				var elements []string
+				if path != "" {
+					elements = append(elements, path)
 				}
-
+				elements = append(elements, group.Name, entry.GetTitle())
+				mapData[strings.Join(elements, "/")] = entry
 			}
 		}
 		if len(group.Groups) > 0 {
