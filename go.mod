@@ -21,7 +21,7 @@ require (
 	github.com/google/go-github/v67 v67.0.0
 	github.com/googleapis/gax-go/v2 v2.14.1
 	github.com/gopasspw/gopass v1.15.15
-	github.com/hashicorp/consul/api v1.30.0
+	github.com/hashicorp/consul/api v1.31.0
 	github.com/hashicorp/vault/api v1.15.0
 	github.com/heroku/heroku-go/v5 v5.5.0
 	github.com/jftuga/ellipsis v1.0.0
@@ -190,7 +190,7 @@ require (
 	golang.org/x/net v0.33.0 // indirect
 	golang.org/x/sync v0.10.0 // indirect
 	golang.org/x/sys v0.28.0 // indirect
-	golang.org/x/term v0.27.0 // indirect
+	golang.org/x/term v0.27.0
 	golang.org/x/text v0.21.0 // indirect
 	golang.org/x/time v0.8.0 // indirect
 	google.golang.org/grpc v1.67.1 // indirect
