@@ -10,7 +10,7 @@ require (
 	github.com/Azure/go-autorest/autorest v0.11.29
 	github.com/DopplerHQ/cli v0.5.11-0.20250106164519-9282a9e63195
 	github.com/alecthomas/kong v1.6.1
-	github.com/aws/aws-sdk-go-v2 v1.32.8
+	github.com/aws/aws-sdk-go-v2 v1.33.0
 	github.com/aws/aws-sdk-go-v2/config v1.28.10
 	github.com/aws/aws-sdk-go-v2/service/secretsmanager v1.34.10
 	github.com/aws/aws-sdk-go-v2/service/ssm v1.56.4
