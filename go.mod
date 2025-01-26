@@ -10,10 +10,10 @@ require (
 	github.com/Azure/go-autorest/autorest v0.11.29
 	github.com/DopplerHQ/cli v0.5.11-0.20250121181959-7381a052723e
 	github.com/alecthomas/kong v1.6.1
-	github.com/aws/aws-sdk-go-v2 v1.33.0
-	github.com/aws/aws-sdk-go-v2/config v1.29.1
-	github.com/aws/aws-sdk-go-v2/service/secretsmanager v1.34.13
-	github.com/aws/aws-sdk-go-v2/service/ssm v1.56.7
+	github.com/aws/aws-sdk-go-v2 v1.34.0
+	github.com/aws/aws-sdk-go-v2/config v1.29.2
+	github.com/aws/aws-sdk-go-v2/service/secretsmanager v1.34.14
+	github.com/aws/aws-sdk-go-v2/service/ssm v1.56.8
 	github.com/cloudflare/cloudflare-go v0.25.0
 	github.com/cyberark/conjur-api-go v0.12.10
 	github.com/dghubble/sling v1.4.2
@@ -54,7 +54,7 @@ require (
 	dario.cat/mergo v1.0.0 // indirect
 	github.com/Azure/go-ansiterm v0.0.0-20210617225240-d185dfc1b5a1 // indirect
 	github.com/Masterminds/semver/v3 v3.3.1 // indirect
-	github.com/aws/aws-sdk-go-v2/service/internal/accept-encoding v1.12.1 // indirect
+	github.com/aws/aws-sdk-go-v2/service/internal/accept-encoding v1.12.2 // indirect
 	github.com/cenkalti/backoff/v4 v4.3.0 // indirect
 	github.com/containerd/log v0.1.0 // indirect
 	github.com/containerd/platforms v0.2.1 // indirect
@@ -115,16 +115,16 @@ require (
 	github.com/ProtonMail/go-crypto v1.1.2 // indirect
 	github.com/armon/go-metrics v0.4.1 // indirect
 	github.com/atotto/clipboard v0.1.4 // indirect
-	github.com/aws/aws-sdk-go-v2/credentials v1.17.54 // indirect
-	github.com/aws/aws-sdk-go-v2/feature/ec2/imds v1.16.24 // indirect
-	github.com/aws/aws-sdk-go-v2/internal/configsources v1.3.28 // indirect
-	github.com/aws/aws-sdk-go-v2/internal/endpoints/v2 v2.6.28 // indirect
-	github.com/aws/aws-sdk-go-v2/internal/ini v1.8.1 // indirect
-	github.com/aws/aws-sdk-go-v2/service/internal/presigned-url v1.12.9 // indirect
-	github.com/aws/aws-sdk-go-v2/service/sso v1.24.11 // indirect
-	github.com/aws/aws-sdk-go-v2/service/ssooidc v1.28.10 // indirect
-	github.com/aws/aws-sdk-go-v2/service/sts v1.33.9 // indirect
-	github.com/aws/smithy-go v1.22.1 // indirect
+	github.com/aws/aws-sdk-go-v2/credentials v1.17.55 // indirect
+	github.com/aws/aws-sdk-go-v2/feature/ec2/imds v1.16.25 // indirect
+	github.com/aws/aws-sdk-go-v2/internal/configsources v1.3.29 // indirect
+	github.com/aws/aws-sdk-go-v2/internal/endpoints/v2 v2.6.29 // indirect
+	github.com/aws/aws-sdk-go-v2/internal/ini v1.8.2 // indirect
+	github.com/aws/aws-sdk-go-v2/service/internal/presigned-url v1.12.10 // indirect
+	github.com/aws/aws-sdk-go-v2/service/sso v1.24.12 // indirect
+	github.com/aws/aws-sdk-go-v2/service/ssooidc v1.28.11 // indirect
+	github.com/aws/aws-sdk-go-v2/service/sts v1.33.10 // indirect
+	github.com/aws/smithy-go v1.22.2 // indirect
 	github.com/bgentry/go-netrc v0.0.0-20140422174119-9fd32a8b3d3d // indirect
 	github.com/blang/semver/v4 v4.0.0 // indirect
 	github.com/caspr-io/yamlpath v0.0.0-20200722075116-502e8d113a9b // indirect
