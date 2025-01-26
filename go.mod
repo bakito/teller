@@ -29,7 +29,7 @@ require (
 	github.com/karrick/godirwalk v1.17.0
 	github.com/mattn/lastpass-go v0.0.0-20160926001517-82bef8502f75
 	github.com/mitchellh/go-homedir v1.1.0
-	github.com/samber/lo v1.47.0
+	github.com/samber/lo v1.48.0
 	github.com/sirupsen/logrus v1.9.3
 	github.com/sosedoff/ansible-vault-go v0.2.0
 	github.com/stretchr/testify v1.10.0
