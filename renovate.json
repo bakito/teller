@@ -12,6 +12,16 @@
       ]
     },
     {
+      "matchUpdateTypes": [
+        "minor",
+        "patch"
+      ],
+      "groupName": "aws",
+      "matchPackageNames": [
+        "github.com/aws/{/,}**"
+      ]
+    },
+    {
       "matchPackageNames": [
         "github.com/cloudflare/cloudflare-go"
       ],
