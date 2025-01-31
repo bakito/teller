@@ -7,7 +7,7 @@ require (
 	github.com/1Password/connect-sdk-go v1.5.3
 	github.com/AlecAivazis/survey/v2 v2.3.7
 	github.com/Azure/azure-sdk-for-go v68.0.0+incompatible
-	github.com/Azure/go-autorest/autorest v0.11.29
+	github.com/Azure/go-autorest/autorest v0.11.30
 	github.com/DopplerHQ/cli v0.5.11-0.20250121181959-7381a052723e
 	github.com/alecthomas/kong v1.6.1
 	github.com/aws/aws-sdk-go-v2 v1.35.0
