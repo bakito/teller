@@ -15,7 +15,7 @@ require (
 	github.com/aws/aws-sdk-go-v2/service/secretsmanager v1.34.16
 	github.com/aws/aws-sdk-go-v2/service/ssm v1.56.10
 	github.com/cloudflare/cloudflare-go v0.25.0
-	github.com/cyberark/conjur-api-go v0.12.10
+	github.com/cyberark/conjur-api-go v0.12.12
 	github.com/dghubble/sling v1.4.2
 	github.com/fatih/color v1.18.0
 	github.com/google/go-github/v68 v68.0.0
