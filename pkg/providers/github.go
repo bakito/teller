@@ -9,7 +9,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/google/go-github/v68/github"
+	"github.com/google/go-github/v69/github"
 	"github.com/spectralops/teller/pkg/core"
 	"github.com/spectralops/teller/pkg/logging"
 	"golang.org/x/crypto/nacl/box"
