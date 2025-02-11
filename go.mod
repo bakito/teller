@@ -22,7 +22,7 @@ require (
 	github.com/googleapis/gax-go/v2 v2.14.1
 	github.com/gopasspw/gopass v1.15.15
 	github.com/hashicorp/consul/api v1.31.0
-	github.com/hashicorp/vault/api v1.15.0
+	github.com/hashicorp/vault/api v1.16.0
 	github.com/heroku/heroku-go/v5 v5.5.0
 	github.com/jftuga/ellipsis v1.0.0
 	github.com/joho/godotenv v1.5.1
