@@ -3,7 +3,7 @@ module github.com/spectralops/teller
 go 1.23.4
 
 require (
-	cloud.google.com/go/secretmanager v1.14.4
+	cloud.google.com/go/secretmanager v1.14.5
 	github.com/1Password/connect-sdk-go v1.5.3
 	github.com/AlecAivazis/survey/v2 v2.3.7
 	github.com/Azure/azure-sdk-for-go v68.0.0+incompatible
@@ -95,7 +95,7 @@ require (
 	go.opentelemetry.io/otel/metric v1.34.0 // indirect
 	go.opentelemetry.io/otel/trace v1.34.0 // indirect
 	google.golang.org/genproto v0.0.0-20250122153221-138b5a5a4fd4 // indirect
-	google.golang.org/genproto/googleapis/api v0.0.0-20250124145028-65684f501c47 // indirect
+	google.golang.org/genproto/googleapis/api v0.0.0-20250207221924-e9438ea467c6 // indirect
 	google.golang.org/genproto/googleapis/rpc v0.0.0-20250207221924-e9438ea467c6 // indirect
 	gopkg.in/yaml.v2 v2.4.0 // indirect
 )
