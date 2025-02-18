@@ -1,3 +1,5 @@
+run:
+  timeout: 5m
 linters-settings:
   dupl:
     threshold: 100
@@ -32,6 +34,8 @@ linters-settings:
     shadow: true
   lll:
     line-length: 140
+  maligned:
+    suggest-new: true
   misspell:
     locale: US
   nolintlint:
