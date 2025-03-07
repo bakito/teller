@@ -14,7 +14,7 @@ require (
 	github.com/alecthomas/kong v1.8.1
 	github.com/aws/aws-sdk-go-v2 v1.36.3
 	github.com/aws/aws-sdk-go-v2/config v1.29.9
-	github.com/aws/aws-sdk-go-v2/service/secretsmanager v1.35.1
+	github.com/aws/aws-sdk-go-v2/service/secretsmanager v1.35.2
 	github.com/aws/aws-sdk-go-v2/service/ssm v1.57.2
 	github.com/cloudflare/cloudflare-go v0.25.0
 	github.com/cyberark/conjur-api-go v0.12.12
