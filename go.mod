@@ -43,7 +43,7 @@ require (
 	go.uber.org/mock v0.5.0
 	golang.org/x/crypto v0.35.0
 	golang.org/x/oauth2 v0.27.0
-	google.golang.org/api v0.223.0
+	google.golang.org/api v0.224.0
 	gopkg.in/yaml.v3 v3.0.1
 )
 
@@ -70,7 +70,7 @@ require (
 	github.com/golang-jwt/jwt/v4 v4.5.0 // indirect
 	github.com/google/go-github/v61 v61.0.0 // indirect
 	github.com/google/s2a-go v0.1.9 // indirect
-	github.com/googleapis/enterprise-certificate-proxy v0.3.4 // indirect
+	github.com/googleapis/enterprise-certificate-proxy v0.3.5 // indirect
 	github.com/hashicorp/go-secure-stdlib/parseutil v0.1.6 // indirect
 	github.com/hashicorp/go-secure-stdlib/strutil v0.1.2 // indirect
 	github.com/hashicorp/golang-lru/v2 v2.0.7 // indirect
@@ -98,7 +98,7 @@ require (
 	go.opentelemetry.io/otel/trace v1.34.0 // indirect
 	google.golang.org/genproto v0.0.0-20250122153221-138b5a5a4fd4 // indirect
 	google.golang.org/genproto/googleapis/api v0.0.0-20250207221924-e9438ea467c6 // indirect
-	google.golang.org/genproto/googleapis/rpc v0.0.0-20250219182151-9fdb1cabc7b2 // indirect
+	google.golang.org/genproto/googleapis/rpc v0.0.0-20250227231956-55c901821b1e // indirect
 	gopkg.in/yaml.v2 v2.4.0 // indirect
 )
 
