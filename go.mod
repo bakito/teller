@@ -5,7 +5,7 @@ go 1.24
 toolchain go1.24.1
 
 require (
-	cloud.google.com/go/secretmanager v1.14.5
+	cloud.google.com/go/secretmanager v1.14.6
 	github.com/1Password/connect-sdk-go v1.5.3
 	github.com/AlecAivazis/survey/v2 v2.3.7
 	github.com/Azure/azure-sdk-for-go v68.0.0+incompatible
@@ -52,7 +52,7 @@ require (
 	cloud.google.com/go/auth v0.15.0 // indirect
 	cloud.google.com/go/auth/oauth2adapt v0.2.7 // indirect
 	cloud.google.com/go/compute/metadata v0.6.0 // indirect
-	cloud.google.com/go/iam v1.3.1 // indirect
+	cloud.google.com/go/iam v1.4.1 // indirect
 	dario.cat/mergo v1.0.0 // indirect
 	github.com/Azure/go-ansiterm v0.0.0-20210617225240-d185dfc1b5a1 // indirect
 	github.com/Masterminds/semver/v3 v3.3.1 // indirect
@@ -96,8 +96,8 @@ require (
 	go.opentelemetry.io/otel v1.34.0 // indirect
 	go.opentelemetry.io/otel/metric v1.34.0 // indirect
 	go.opentelemetry.io/otel/trace v1.34.0 // indirect
-	google.golang.org/genproto v0.0.0-20250122153221-138b5a5a4fd4 // indirect
-	google.golang.org/genproto/googleapis/api v0.0.0-20250207221924-e9438ea467c6 // indirect
+	google.golang.org/genproto v0.0.0-20250303144028-a0af3efb3deb // indirect
+	google.golang.org/genproto/googleapis/api v0.0.0-20250303144028-a0af3efb3deb // indirect
 	google.golang.org/genproto/googleapis/rpc v0.0.0-20250303144028-a0af3efb3deb // indirect
 	gopkg.in/yaml.v2 v2.4.0 // indirect
 )
