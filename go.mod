@@ -43,7 +43,7 @@ require (
 	go.uber.org/mock v0.5.0
 	golang.org/x/crypto v0.36.0
 	golang.org/x/oauth2 v0.28.0
-	google.golang.org/api v0.225.0
+	google.golang.org/api v0.226.0
 	gopkg.in/yaml.v3 v3.0.1
 )
 
