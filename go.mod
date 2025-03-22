@@ -37,9 +37,9 @@ require (
 	github.com/stretchr/testify v1.10.0
 	github.com/testcontainers/testcontainers-go v0.35.0
 	github.com/tobischo/gokeepasslib/v3 v3.6.1
-	go.etcd.io/etcd/api/v3 v3.5.19
-	go.etcd.io/etcd/client/pkg/v3 v3.5.19
-	go.etcd.io/etcd/client/v3 v3.5.19
+	go.etcd.io/etcd/api/v3 v3.5.20
+	go.etcd.io/etcd/client/pkg/v3 v3.5.20
+	go.etcd.io/etcd/client/v3 v3.5.20
 	go.uber.org/mock v0.5.0
 	golang.org/x/crypto v0.36.0
 	golang.org/x/oauth2 v0.28.0
