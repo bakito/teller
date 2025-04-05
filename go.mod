@@ -96,6 +96,7 @@ require (
 	github.com/tklauser/numcpus v0.6.1 // indirect
 	github.com/tobischo/argon2 v0.1.0 // indirect
 	github.com/twpayne/go-pinentry v0.3.0 // indirect
+	github.com/urfave/cli/v2 v2.27.5 // indirect
 	github.com/yusufpapurcu/wmi v1.2.4 // indirect
 	go.opentelemetry.io/auto/sdk v1.1.0 // indirect
 	go.opentelemetry.io/contrib/instrumentation/google.golang.org/grpc/otelgrpc v0.59.0 // indirect
@@ -186,7 +187,6 @@ require (
 	github.com/spf13/pflag v1.0.5 // indirect
 	github.com/uber/jaeger-client-go v2.30.0+incompatible // indirect
 	github.com/uber/jaeger-lib v2.4.1+incompatible // indirect
-	github.com/urfave/cli/v2 v2.27.5 // indirect
 	github.com/xrash/smetrics v0.0.0-20240521201337-686a1a2994c1 // indirect
 	github.com/zalando/go-keyring v0.2.6 // indirect
 	go.uber.org/atomic v1.10.0 // indirect
