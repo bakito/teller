@@ -10,7 +10,7 @@ require (
 	github.com/AlecAivazis/survey/v2 v2.3.7
 	github.com/Azure/azure-sdk-for-go v68.0.0+incompatible
 	github.com/Azure/go-autorest/autorest v0.11.30
-	github.com/DopplerHQ/cli v0.5.11-0.20250402201212-b4b3d902abf3
+	github.com/DopplerHQ/cli v0.5.11-0.20250422162918-6fe26973fcc5
 	github.com/alecthomas/kong v1.10.0
 	github.com/aws/aws-sdk-go-v2 v1.36.3
 	github.com/aws/aws-sdk-go-v2/config v1.29.14
