@@ -13,7 +13,7 @@ import (
 	context "context"
 	reflect "reflect"
 
-	github "github.com/google/go-github/v72/github"
+	github "github.com/google/go-github/v73/github"
 	gomock "go.uber.org/mock/gomock"
 )
 
