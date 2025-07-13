@@ -2,7 +2,7 @@ module github.com/spectralops/teller
 
 go 1.24.1
 
-toolchain go1.24.4
+toolchain go1.24.5
 
 require (
 	cloud.google.com/go/secretmanager v1.15.0
