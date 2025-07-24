@@ -17,7 +17,7 @@ require (
 	github.com/aws/aws-sdk-go-v2/service/secretsmanager v1.35.8
 	github.com/aws/aws-sdk-go-v2/service/ssm v1.60.2
 	github.com/cloudflare/cloudflare-go v0.25.0
-	github.com/cyberark/conjur-api-go v0.13.1
+	github.com/cyberark/conjur-api-go v0.13.2
 	github.com/dghubble/sling v1.4.2
 	github.com/fatih/color v1.18.0
 	github.com/google/go-github/v73 v73.0.0
@@ -55,7 +55,7 @@ require (
 	cloud.google.com/go/iam v1.5.2 // indirect
 	dario.cat/mergo v1.0.1 // indirect
 	github.com/Azure/go-ansiterm v0.0.0-20210617225240-d185dfc1b5a1 // indirect
-	github.com/Masterminds/semver/v3 v3.3.1 // indirect
+	github.com/Masterminds/semver/v3 v3.4.0 // indirect
 	github.com/aws/aws-sdk-go-v2/service/internal/accept-encoding v1.12.4 // indirect
 	github.com/cenkalti/backoff/v4 v4.3.0 // indirect
 	github.com/containerd/errdefs v1.0.0 // indirect
