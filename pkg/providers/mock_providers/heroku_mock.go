@@ -13,7 +13,7 @@ import (
 	context "context"
 	reflect "reflect"
 
-	v5 "github.com/heroku/heroku-go/v5"
+	v5 "github.com/heroku/heroku-go/v6"
 	gomock "go.uber.org/mock/gomock"
 )
 
