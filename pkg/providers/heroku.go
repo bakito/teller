@@ -6,7 +6,7 @@ import (
 	"os"
 	"sort"
 
-	heroku "github.com/heroku/heroku-go/v5"
+	heroku "github.com/heroku/heroku-go/v6"
 	"github.com/spectralops/teller/pkg/core"
 	"github.com/spectralops/teller/pkg/logging"
 )
@@ -22,7 +22,7 @@ type Heroku struct {
 
 const HerokuName = "heroku"
 
-//nolint
+// nolint
 func init() {
 	metaInfo := core.MetaInfo{
 		Description:    "Heroku",
