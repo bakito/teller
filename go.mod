@@ -2,7 +2,7 @@ module github.com/spectralops/teller
 
 go 1.24.1
 
-toolchain go1.24.6
+toolchain go1.25.0
 
 require (
 	cloud.google.com/go/secretmanager v1.15.0
@@ -25,7 +25,7 @@ require (
 	github.com/gopasspw/gopass v1.15.16
 	github.com/hashicorp/consul/api v1.32.1
 	github.com/hashicorp/vault/api v1.20.0
-	github.com/heroku/heroku-go/v6 v6.0.0
+	github.com/heroku/heroku-go/v5 v5.5.0
 	github.com/heroku/heroku-go/v6 v6.0.0
 	github.com/jftuga/ellipsis v1.0.0
 	github.com/joho/godotenv v1.5.1
