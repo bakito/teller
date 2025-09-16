@@ -263,10 +263,10 @@ github.com/gopasspw/gopass v1.15.17 h1:ujxz+zlRHy5FmQ1IwJfV1eq0DNWw+fYwzBzf0YQqc
 github.com/gopasspw/gopass v1.15.17/go.mod h1:mwQtcU46W6/50MBV3gFVPTi5Db/0ONUhVk7Vv9/oQRQ=
 github.com/grpc-ecosystem/grpc-gateway/v2 v2.26.3 h1:5ZPtiqj0JL5oKWmcsq4VMaAW5ukBEgSGXEN89zeH1Jo=
 github.com/grpc-ecosystem/grpc-gateway/v2 v2.26.3/go.mod h1:ndYquD05frm2vACXE1nsccT4oJzjhw2arTS2cpUD1PI=
-github.com/hashicorp/consul/api v1.32.1 h1:0+osr/3t/aZNAdJX558crU3PEjVrG4x6715aZHRgceE=
-github.com/hashicorp/consul/api v1.32.1/go.mod h1:mXUWLnxftwTmDv4W3lzxYCPD199iNLLUyLfLGFJbtl4=
-github.com/hashicorp/consul/sdk v0.16.1 h1:V8TxTnImoPD5cj0U9Spl0TUxcytjcbbJeADFF07KdHg=
-github.com/hashicorp/consul/sdk v0.16.1/go.mod h1:fSXvwxB2hmh1FMZCNl6PwX0Q/1wdWtHJcZ7Ea5tns0s=
+github.com/hashicorp/consul/api v1.32.2 h1:ROr9omQkeeFrSm6X7zZJtWPcLWsHmlgEP0Z17fAhtQA=
+github.com/hashicorp/consul/api v1.32.2/go.mod h1:qCrHmC5A1g3ieZExjdU95p5cYqfah3AiTm7vxsovco0=
+github.com/hashicorp/consul/sdk v0.16.3 h1:kI/oax+yeaoremkh36G/f4Q13ivdFF4AE+Co/LlZa0Q=
+github.com/hashicorp/consul/sdk v0.16.3/go.mod h1:TSPshuYdi1OQwpLund2vkTHpp4WnLyhf7Q/YihGMtp0=
 github.com/hashicorp/errwrap v1.0.0/go.mod h1:YH+1FKiLXxHSkmPseP+kNlulaMuP3n2brvKWEqk/Jc4=
 github.com/hashicorp/errwrap v1.1.0 h1:OxrOeh75EUXMY8TBjag2fzXGZ40LB6IKw45YeGUDY2I=
 github.com/hashicorp/errwrap v1.1.0/go.mod h1:YH+1FKiLXxHSkmPseP+kNlulaMuP3n2brvKWEqk/Jc4=
