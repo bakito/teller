@@ -20,7 +20,7 @@ require (
 	github.com/fatih/color v1.18.0
 	github.com/google/go-github/v74 v74.0.0
 	github.com/googleapis/gax-go/v2 v2.15.0
-	github.com/gopasspw/gopass v1.15.17
+	github.com/gopasspw/gopass v1.15.18
 	github.com/hashicorp/consul/api v1.32.2
 	github.com/hashicorp/vault/api v1.21.0
 	github.com/heroku/heroku-go/v5 v5.5.0
@@ -69,10 +69,11 @@ require (
 	github.com/go-logr/logr v1.4.3 // indirect
 	github.com/go-logr/stdr v1.2.2 // indirect
 	github.com/go-ole/go-ole v1.2.6 // indirect
+	github.com/gobwas/glob v0.2.3 // indirect
 	github.com/golang-jwt/jwt/v4 v4.5.2 // indirect
 	github.com/google/s2a-go v0.1.9 // indirect
 	github.com/googleapis/enterprise-certificate-proxy v0.3.6 // indirect
-	github.com/gopasspw/gitconfig v0.0.3-0.20250819161336-9ff4f059ac1d // indirect
+	github.com/gopasspw/gitconfig v0.0.3 // indirect
 	github.com/grpc-ecosystem/grpc-gateway/v2 v2.26.3 // indirect
 	github.com/hashicorp/go-immutable-radix v1.3.1 // indirect
 	github.com/hashicorp/go-secure-stdlib/parseutil v0.2.0 // indirect
