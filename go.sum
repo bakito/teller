@@ -211,6 +211,8 @@ github.com/go-ole/go-ole v1.2.6/go.mod h1:pprOEPIfldk/42T2oK7lQ4v4JSDwmV0As9GaiU
 github.com/go-stack/stack v1.8.0/go.mod h1:v0f6uXyyMGvRgIKkXu+yp6POWl0qKG85gN/melR3HDY=
 github.com/go-test/deep v1.1.1 h1:0r/53hagsehfO4bzD2Pgr/+RgHqhmf+k1Bpse2cTu1U=
 github.com/go-test/deep v1.1.1/go.mod h1:5C2ZWiW0ErCdrYzpqxLbTX7MG14M9iiw8DgHncVwcsE=
+github.com/gobwas/glob v0.2.3 h1:A4xDbljILXROh+kObIiy5kIaPYD8e96x1tgBhUI5J+Y=
+github.com/gobwas/glob v0.2.3/go.mod h1:d3Ez4x06l9bZtSvzIay5+Yzi0fmZzPgnTbPcKjJAkT8=
 github.com/godbus/dbus/v5 v5.0.4/go.mod h1:xhWf0FNVPg57R7Z0UbKHbJfkEywrmjJnf7w5xrFpKfA=
 github.com/godbus/dbus/v5 v5.1.0 h1:4KLkAxT3aOY8Li4FRJe/KvhoNFFxo0m6fNuFUO8QJUk=
 github.com/godbus/dbus/v5 v5.1.0/go.mod h1:xhWf0FNVPg57R7Z0UbKHbJfkEywrmjJnf7w5xrFpKfA=
@@ -257,10 +259,10 @@ github.com/googleapis/gax-go/v2 v2.15.0 h1:SyjDc1mGgZU5LncH8gimWo9lW1DtIfPibOG81
 github.com/googleapis/gax-go/v2 v2.15.0/go.mod h1:zVVkkxAQHa1RQpg9z2AUCMnKhi0Qld9rcmyfL1OZhoc=
 github.com/gopasspw/clipboard v0.0.3 h1:RYSU2bBcHClFkoie6lCsrxDtP/yzRpDr2zmePWxjkVs=
 github.com/gopasspw/clipboard v0.0.3/go.mod h1:i0cShr7JEbOXZ/iKM5RyfBLbu1FPzouO8BTCJy0uHy8=
-github.com/gopasspw/gitconfig v0.0.3-0.20250819161336-9ff4f059ac1d h1:ULDMvON9pUIRelCfpn4fujlndn1eUmrLYiMsUpuu6LI=
-github.com/gopasspw/gitconfig v0.0.3-0.20250819161336-9ff4f059ac1d/go.mod h1:QXipMxku0UNLRXdNHskPQ8zsnnT0ZL9+XrNJPCMHuGY=
-github.com/gopasspw/gopass v1.15.17 h1:ujxz+zlRHy5FmQ1IwJfV1eq0DNWw+fYwzBzf0YQqcO8=
-github.com/gopasspw/gopass v1.15.17/go.mod h1:mwQtcU46W6/50MBV3gFVPTi5Db/0ONUhVk7Vv9/oQRQ=
+github.com/gopasspw/gitconfig v0.0.3 h1:uJn9y5jUabHtX09p5C3UeNcAQm27MkHDHEDn4XaNacY=
+github.com/gopasspw/gitconfig v0.0.3/go.mod h1:qWxSOCbeGpetrXC5kGftIxSm0Au/5NHnK6HUtCWeyDQ=
+github.com/gopasspw/gopass v1.15.18 h1:4yXe414+IdLwDw6F80WO2599G/+A149sl4cwK12gLjE=
+github.com/gopasspw/gopass v1.15.18/go.mod h1:V3aHGSqBJPglrnXBmxCKa/gCgpR5vfOXEWaZ2t5dINc=
 github.com/grpc-ecosystem/grpc-gateway/v2 v2.26.3 h1:5ZPtiqj0JL5oKWmcsq4VMaAW5ukBEgSGXEN89zeH1Jo=
 github.com/grpc-ecosystem/grpc-gateway/v2 v2.26.3/go.mod h1:ndYquD05frm2vACXE1nsccT4oJzjhw2arTS2cpUD1PI=
 github.com/hashicorp/consul/api v1.32.2 h1:ROr9omQkeeFrSm6X7zZJtWPcLWsHmlgEP0Z17fAhtQA=
