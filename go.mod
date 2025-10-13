@@ -23,7 +23,7 @@ require (
 	github.com/gopasspw/gopass v1.15.18
 	github.com/hashicorp/consul/api v1.32.4
 	github.com/hashicorp/vault/api v1.22.0
-	github.com/heroku/heroku-go/v6 v6.1.0
+	github.com/heroku/heroku-go/v5 v5.5.0
 	github.com/heroku/heroku-go/v6 v6.1.0
 	github.com/jftuga/ellipsis v1.0.0
 	github.com/joho/godotenv v1.5.1
@@ -41,7 +41,7 @@ require (
 	go.etcd.io/etcd/client/v3 v3.6.5
 	go.uber.org/mock v0.6.0
 	golang.org/x/crypto v0.42.0
-	golang.org/x/oauth2 v0.31.0
+	golang.org/x/oauth2 v0.32.0
 	google.golang.org/api v0.252.0
 	gopkg.in/yaml.v3 v3.0.1
 )
