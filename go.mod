@@ -3,7 +3,7 @@ module github.com/spectralops/teller
 go 1.25.0
 
 require (
-	cloud.google.com/go/secretmanager v1.15.1
+	cloud.google.com/go/secretmanager v1.16.0
 	github.com/1Password/connect-sdk-go v1.5.3
 	github.com/AlecAivazis/survey/v2 v2.3.7
 	github.com/Azure/azure-sdk-for-go v68.0.0+incompatible
