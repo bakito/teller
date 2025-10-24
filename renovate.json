@@ -1,31 +1,44 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "customManagers": [
+    {
+      "customType": "regex",
+      "datasourceTemplate": "go",
+      "description": "Update toolbox tools in .toolbox.mk",
+      "managerFilePatterns": [
+        ".toolbox.mk"
+      ],
+      "matchStrings": [
+        "# renovate: packageName=(?<packageName>.+?)\\s+.+?_VERSION \\?= (?<currentValue>.+?)\\s"
+      ]
+    }
+  ],
   "packageRules": [
     {
-      "matchUpdateTypes": [
-        "minor",
-        "patch"
-      ],
       "groupName": "etcd",
       "matchPackageNames": [
         "go.etcd.io/etcd/{/,}**"
-      ]
-    },
-    {
+      ],
       "matchUpdateTypes": [
         "minor",
         "patch"
-      ],
-      "groupName": "aws",
-      "matchPackageNames": [
-        "github.com/aws/{/,}**"
       ]
     },
     {
+      "groupName": "aws",
+      "matchPackageNames": [
+        "github.com/aws/{/,}**"
+      ],
+      "matchUpdateTypes": [
+        "minor",
+        "patch"
+      ]
+    },
+    {
+      "enabled": false,
       "matchPackageNames": [
         "github.com/cloudflare/cloudflare-go"
-      ],
-      "enabled": false
+      ]
     }
   ]
 }
