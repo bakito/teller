@@ -3,6 +3,7 @@ package pkg
 import (
 	"bufio"
 	"bytes"
+	"context"
 	"encoding/json"
 	"errors"
 	"fmt"
@@ -61,7 +62,7 @@ func NewTeller(tlrfile *TellerFile, cmd []string, redact bool, logger logging.Lo
 
 // execute a command, and take care to sanitize the child process environment (conditionally)
 func (tl *Teller) execCmd(cmd string, cmdArgs []string, withRedaction bool) error {
-	command := exec.Command(cmd, cmdArgs...)
+	command := exec.CommandContext(context.Background(), cmd, cmdArgs...)
 	if !tl.Config.CarryEnv {
 		command.Env = lo.Map(tl.Entries, func(ent core.EnvEntry, _ int) string {
 			return fmt.Sprintf("%s=%s", ent.Key, ent.Value)

@@ -11,8 +11,6 @@ type Example struct {
 	logger logging.Logger
 }
 
-//nolint
-
 // func init() {
 // 	metaInto := core.MetaInfo{
 // 		Description:    "ProviderName",

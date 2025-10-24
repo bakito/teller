@@ -2,6 +2,7 @@ package testutils
 
 import (
 	"bytes"
+	"context"
 	"os/exec"
 )
 
@@ -16,7 +17,7 @@ func ExecCmd(name string, arg []string, workingDirectory string) (stdout, stderr
 			r = append(r, str)
 		}
 	}
-	cmd := exec.Command(name, r...)
+	cmd := exec.CommandContext(context.Background(), name, r...)
 	var stdoutBuff bytes.Buffer
 	var stderrBuff bytes.Buffer
 	cmd.Dir = workingDirectory
