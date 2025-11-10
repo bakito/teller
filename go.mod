@@ -23,7 +23,7 @@ require (
 	github.com/gopasspw/gopass v1.15.18
 	github.com/hashicorp/consul/api v1.33.0
 	github.com/hashicorp/vault/api v1.22.0
-	github.com/heroku/heroku-go/v6 v6.1.0
+	github.com/heroku/heroku-go/v5 v5.5.0
 	github.com/heroku/heroku-go/v6 v6.1.0
 	github.com/jftuga/ellipsis v1.0.0
 	github.com/joho/godotenv v1.5.1
@@ -34,7 +34,7 @@ require (
 	github.com/sirupsen/logrus v1.9.3
 	github.com/sosedoff/ansible-vault-go v0.2.0
 	github.com/stretchr/testify v1.11.1
-	github.com/testcontainers/testcontainers-go v0.39.0
+	github.com/testcontainers/testcontainers-go v0.40.0
 	github.com/tobischo/gokeepasslib/v3 v3.6.1
 	go.etcd.io/etcd/api/v3 v3.6.5
 	go.etcd.io/etcd/client/pkg/v3 v3.6.5
@@ -151,7 +151,7 @@ require (
 	github.com/danieljoos/wincred v1.2.2 // indirect
 	github.com/davecgh/go-spew v1.1.2-0.20180830191138-d8f796af33cc // indirect
 	github.com/dimchansky/utfbom v1.1.1 // indirect
-	github.com/docker/docker v28.3.3+incompatible // indirect
+	github.com/docker/docker v28.5.1+incompatible // indirect
 	github.com/docker/go-connections v0.6.0 // indirect
 	github.com/docker/go-units v0.5.0 // indirect
 	github.com/dustin/go-humanize v1.0.1 // indirect
