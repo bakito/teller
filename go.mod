@@ -9,7 +9,7 @@ require (
 	github.com/Azure/azure-sdk-for-go v68.0.0+incompatible
 	github.com/Azure/go-autorest/autorest v0.11.30
 	github.com/DopplerHQ/cli v0.5.11-0.20250729174807-a47f6d765bf9
-	github.com/alecthomas/kong v1.12.1
+	github.com/alecthomas/kong v1.13.0
 	github.com/aws/aws-sdk-go-v2 v1.39.6
 	github.com/aws/aws-sdk-go-v2/config v1.31.17
 	github.com/aws/aws-sdk-go-v2/service/secretsmanager v1.39.11
@@ -23,7 +23,7 @@ require (
 	github.com/gopasspw/gopass v1.15.18
 	github.com/hashicorp/consul/api v1.33.0
 	github.com/hashicorp/vault/api v1.22.0
-	github.com/heroku/heroku-go/v6 v6.1.0
+	github.com/heroku/heroku-go/v5 v5.5.0
 	github.com/heroku/heroku-go/v6 v6.1.0
 	github.com/jftuga/ellipsis v1.0.0
 	github.com/joho/godotenv v1.5.1
