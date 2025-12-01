@@ -1,6 +1,6 @@
 module github.com/spectralops/teller
 
-go 1.25.3
+go 1.25.4
 
 require (
 	cloud.google.com/go/secretmanager v1.16.0
