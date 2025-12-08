@@ -59,8 +59,8 @@ github.com/Azure/go-autorest/tracing v0.6.0 h1:TYi4+3m5t6K48TGI9AUdb+IzbnSxvnvUM
 github.com/Azure/go-autorest/tracing v0.6.0/go.mod h1:+vhtPC754Xsa23ID7GlGsrdKBpUA79WCAKPPZVC2DeU=
 github.com/BurntSushi/toml v0.3.1/go.mod h1:xHWCNGjB5oqiDr8zfno3MHue2Ht5sIBksp03qcyfWMU=
 github.com/DataDog/datadog-go v3.2.0+incompatible/go.mod h1:LButxg5PwREeZtORoXG3tL4fMGNddJ+vMq1mwgfaqoQ=
-github.com/DopplerHQ/cli v0.5.11-0.20250729174807-a47f6d765bf9 h1:Lf3sFQON95tg2EGkANenbRo9cU6CO9Ltz+rdr5dd8Ig=
-github.com/DopplerHQ/cli v0.5.11-0.20250729174807-a47f6d765bf9/go.mod h1:97WmNvpkR1pD4I3BtN/cOOrUi19vbT2OKSLiOJFK+ws=
+github.com/DopplerHQ/cli v0.5.11-0.20251205172205-5f22c35cfffc h1:FRyj6+e+Q/TcEfaB83s9cy5orbrLCui19s4AcVN9l7A=
+github.com/DopplerHQ/cli v0.5.11-0.20251205172205-5f22c35cfffc/go.mod h1:iSrIjWOekYJdTnXSeO1kJpQoeAEMz5KanaC9DYNO8lU=
 github.com/HdrHistogram/hdrhistogram-go v1.1.2 h1:5IcZpTvzydCQeHzK4Ef/D5rrSqwxob0t8PQPMybUNFM=
 github.com/HdrHistogram/hdrhistogram-go v1.1.2/go.mod h1:yDgFjdqOqDEKOvasDdhWNXYg9BVp4O+o5f6V/ehm6Oo=
 github.com/Masterminds/semver/v3 v3.4.0 h1:Zog+i5UMtVoCU8oKka5P7i9q9HgrJeGzI9SA1Xbatp0=
