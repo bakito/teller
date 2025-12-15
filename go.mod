@@ -15,7 +15,7 @@ require (
 	github.com/aws/aws-sdk-go-v2/service/secretsmanager v1.40.3
 	github.com/aws/aws-sdk-go-v2/service/ssm v1.67.5
 	github.com/cloudflare/cloudflare-go v0.25.0
-	github.com/cyberark/conjur-api-go v0.13.11
+	github.com/cyberark/conjur-api-go v0.13.12
 	github.com/dghubble/sling v1.4.2
 	github.com/fatih/color v1.18.0
 	github.com/google/go-github/v80 v80.0.0
@@ -109,10 +109,10 @@ require (
 	go.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracehttp v1.31.0 // indirect
 	go.opentelemetry.io/otel/metric v1.38.0 // indirect
 	go.opentelemetry.io/otel/trace v1.38.0 // indirect
+	go.yaml.in/yaml/v3 v3.0.4 // indirect
 	google.golang.org/genproto v0.0.0-20250603155806-513f23925822 // indirect
 	google.golang.org/genproto/googleapis/api v0.0.0-20251022142026-3a174f9686a8 // indirect
 	google.golang.org/genproto/googleapis/rpc v0.0.0-20251124214823-79d6a2a48846 // indirect
-	gopkg.in/yaml.v2 v2.4.0 // indirect
 )
 
 require (
