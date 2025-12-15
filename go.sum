@@ -272,8 +272,8 @@ github.com/gopasspw/clipboard v0.0.4 h1:v3HUlVHfBXPx9woIQnsBIbs9ZM3i77OCtVKRMLhm
 github.com/gopasspw/clipboard v0.0.4/go.mod h1:i0cShr7JEbOXZ/iKM5RyfBLbu1FPzouO8BTCJy0uHy8=
 github.com/gopasspw/gitconfig v0.0.3 h1:uJn9y5jUabHtX09p5C3UeNcAQm27MkHDHEDn4XaNacY=
 github.com/gopasspw/gitconfig v0.0.3/go.mod h1:qWxSOCbeGpetrXC5kGftIxSm0Au/5NHnK6HUtCWeyDQ=
-github.com/gopasspw/gopass v1.16.0 h1:aDc28a51gbNHH+Ox6kntqsereTvF5SqT9NXYgID6pUE=
-github.com/gopasspw/gopass v1.16.0/go.mod h1:Dsxqt+adcFszXvA+yMvPMfx8dteUtZKrSQ2qgaKFZgI=
+github.com/gopasspw/gopass v1.16.1 h1:eqlW8zkWVzcJsEstDYDuvaPnEYZ0HALc7+n/o1/JZNM=
+github.com/gopasspw/gopass v1.16.1/go.mod h1:Dsxqt+adcFszXvA+yMvPMfx8dteUtZKrSQ2qgaKFZgI=
 github.com/grpc-ecosystem/grpc-gateway/v2 v2.26.3 h1:5ZPtiqj0JL5oKWmcsq4VMaAW5ukBEgSGXEN89zeH1Jo=
 github.com/grpc-ecosystem/grpc-gateway/v2 v2.26.3/go.mod h1:ndYquD05frm2vACXE1nsccT4oJzjhw2arTS2cpUD1PI=
 github.com/hashicorp/consul/api v1.33.0 h1:MnFUzN1Bo6YDGi/EsRLbVNgA4pyCymmcswrE5j4OHBM=

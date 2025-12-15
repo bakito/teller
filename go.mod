@@ -20,7 +20,7 @@ require (
 	github.com/fatih/color v1.18.0
 	github.com/google/go-github/v80 v80.0.0
 	github.com/googleapis/gax-go/v2 v2.15.0
-	github.com/gopasspw/gopass v1.16.0
+	github.com/gopasspw/gopass v1.16.1
 	github.com/hashicorp/consul/api v1.33.0
 	github.com/hashicorp/vault/api v1.22.0
 	github.com/heroku/heroku-go/v5 v5.5.0
