@@ -23,7 +23,7 @@ require (
 	github.com/gopasspw/gopass v1.16.1
 	github.com/hashicorp/consul/api v1.33.0
 	github.com/hashicorp/vault/api v1.22.0
-	github.com/heroku/heroku-go/v6 v6.1.0
+	github.com/heroku/heroku-go/v5 v5.5.0
 	github.com/heroku/heroku-go/v6 v6.1.0
 	github.com/jftuga/ellipsis v1.0.0
 	github.com/joho/godotenv v1.5.1
@@ -42,7 +42,7 @@ require (
 	go.uber.org/mock v0.6.0
 	golang.org/x/crypto v0.46.0
 	golang.org/x/oauth2 v0.34.0
-	google.golang.org/api v0.259.0
+	google.golang.org/api v0.260.0
 	gopkg.in/yaml.v3 v3.0.1
 )
 
@@ -74,7 +74,7 @@ require (
 	github.com/gobwas/glob v0.2.3 // indirect
 	github.com/golang-jwt/jwt/v4 v4.5.2 // indirect
 	github.com/google/s2a-go v0.1.9 // indirect
-	github.com/googleapis/enterprise-certificate-proxy v0.3.7 // indirect
+	github.com/googleapis/enterprise-certificate-proxy v0.3.9 // indirect
 	github.com/gopasspw/gitconfig v0.0.3 // indirect
 	github.com/grpc-ecosystem/grpc-gateway/v2 v2.26.3 // indirect
 	github.com/hashicorp/go-immutable-radix v1.3.1 // indirect
