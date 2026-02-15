@@ -42,7 +42,7 @@ require (
 	go.uber.org/mock v0.6.0
 	golang.org/x/crypto v0.47.0
 	golang.org/x/oauth2 v0.35.0
-	google.golang.org/api v0.265.0
+	google.golang.org/api v0.266.0
 	gopkg.in/yaml.v3 v3.0.1
 )
 
@@ -113,7 +113,7 @@ require (
 	go.yaml.in/yaml/v3 v3.0.4 // indirect
 	google.golang.org/genproto v0.0.0-20260128011058-8636f8732409 // indirect
 	google.golang.org/genproto/googleapis/api v0.0.0-20260128011058-8636f8732409 // indirect
-	google.golang.org/genproto/googleapis/rpc v0.0.0-20260128011058-8636f8732409 // indirect
+	google.golang.org/genproto/googleapis/rpc v0.0.0-20260203192932-546029d2fa20 // indirect
 )
 
 require (
