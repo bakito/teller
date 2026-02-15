@@ -1,6 +1,6 @@
 module github.com/spectralops/teller
 
-go 1.25.5
+go 1.25.7
 
 require (
 	cloud.google.com/go/secretmanager v1.16.0
@@ -8,7 +8,7 @@ require (
 	github.com/AlecAivazis/survey/v2 v2.3.7
 	github.com/Azure/azure-sdk-for-go v68.0.0+incompatible
 	github.com/Azure/go-autorest/autorest v0.11.30
-	github.com/DopplerHQ/cli v0.5.11-0.20260127224614-41667f6c2822
+	github.com/DopplerHQ/cli v0.5.11-0.20260212154445-4f37db7b7a8d
 	github.com/alecthomas/kong v1.14.0
 	github.com/aws/aws-sdk-go-v2 v1.41.1
 	github.com/aws/aws-sdk-go-v2/config v1.32.7
