@@ -35,7 +35,7 @@ require (
 	github.com/sosedoff/ansible-vault-go v0.2.0
 	github.com/stretchr/testify v1.11.1
 	github.com/testcontainers/testcontainers-go v0.40.0
-	github.com/tobischo/gokeepasslib/v3 v3.6.1
+	github.com/tobischo/gokeepasslib/v3 v3.6.2
 	go.etcd.io/etcd/api/v3 v3.6.8
 	go.etcd.io/etcd/client/pkg/v3 v3.6.8
 	go.etcd.io/etcd/client/v3 v3.6.8
