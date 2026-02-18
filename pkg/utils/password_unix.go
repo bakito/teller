@@ -29,6 +29,7 @@ func PromptPassword(provider string) (string, error) {
 	}()
 
 	fmt.Printf("Please the %s password: \n", provider)
+	//nolint:gosec // G115
 	key, err := term.ReadPassword(int(os.Stdin.Fd()))
 	if err != nil {
 		return "", err

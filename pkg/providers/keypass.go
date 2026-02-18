@@ -26,7 +26,7 @@ type KeyPass struct {
 
 const KeyPassName = "KeyPass"
 
-//nolint
+// nolint
 func init() {
 	metaInfo := core.MetaInfo{
 		Description:    "Keypass",
@@ -70,6 +70,7 @@ func NewKeyPass(logger logging.Logger) (core.Provider, error) {
 		return nil, errors.New("missing `KEYPASS_DB_PATH`")
 	}
 
+	//nolint:gosec // G703
 	file, err := os.Open(dbPath)
 	if err != nil {
 		return nil, err
