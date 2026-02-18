@@ -24,7 +24,7 @@ type KeeperSecretsManager struct {
 
 const keeperName = "keeper_secretsmanager"
 
-//nolint
+// nolint
 func init() {
 	metaInto := core.MetaInfo{
 		Description:    "Keeper Secrets Manager",
@@ -176,7 +176,7 @@ func NewKsmClient() (KsmClient, error) {
 	var options *ksm.ClientOptions = nil
 	if config != "" {
 		options = &ksm.ClientOptions{Config: ksm.NewMemoryKeyValueStorage(config)}
-	} else if stat, err := os.Stat(configPath); err == nil && stat.Size() > 2 {
+	} else if stat, err := os.Stat(configPath); err == nil && stat.Size() > 2 { //nolint:gosec // G703
 		options = &ksm.ClientOptions{Config: ksm.NewFileKeyValueStorage(configPath)}
 	}
 

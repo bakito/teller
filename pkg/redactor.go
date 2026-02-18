@@ -38,6 +38,7 @@ func NewRedactor(dist io.Writer, entries []core.EnvEntry) *Redactor {
 			for i := range entries {
 				line = strings.ReplaceAll(line, entries[i].Value, entries[i].RedactWith)
 			}
+			//nolint:gosec // G705
 			if _, err := fmt.Fprintln(dist, line); err != nil {
 				ch <- r.CloseWithError(err)
 				return
