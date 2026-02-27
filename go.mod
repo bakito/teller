@@ -21,9 +21,9 @@ require (
 	github.com/google/go-github/v83 v83.0.0
 	github.com/googleapis/gax-go/v2 v2.17.0
 	github.com/gopasspw/gopass v1.16.1
-	github.com/hashicorp/consul/api v1.33.2
+	github.com/hashicorp/consul/api v1.33.4
 	github.com/hashicorp/vault/api v1.22.0
-	github.com/heroku/heroku-go/v6 v6.1.0
+	github.com/heroku/heroku-go/v5 v5.5.0
 	github.com/heroku/heroku-go/v6 v6.1.0
 	github.com/jftuga/ellipsis v1.0.0
 	github.com/joho/godotenv v1.5.1
